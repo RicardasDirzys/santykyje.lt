@@ -36,5 +36,5 @@ jobs:
             **/node_modules/**
             **/.env*
             *.pdf
-            *.txt
+            pdf_content*.txt
             README.md
