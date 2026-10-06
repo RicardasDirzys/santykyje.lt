@@ -22,7 +22,8 @@ jobs:
           server: 45.84.204.101
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftp
+          protocol: ftps
+          security: loose
           port: 21
           server-dir: ./
           exclude: |
@@ -34,4 +35,6 @@ jobs:
             **/scratch/**
             **/node_modules/**
             **/.env*
+            *.pdf
+            *.txt
             README.md
