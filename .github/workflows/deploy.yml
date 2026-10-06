@@ -1,0 +1,36 @@
+name: 🚀 Automatinis diegimas į serverį
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  web-deploy:
+    name: 📦 Kelti pakeistus failus į serverį
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Paimti naujausią kodą
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: 🚀 Sinchronizuoti failus per FTPS
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          server-dir: domains/santykyje.lt/public_html/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github*/**
+            **/_backups/**
+            **/_docs/**
+            **/scratch/**
+            **/node_modules/**
+            **/.env*
+            README.md

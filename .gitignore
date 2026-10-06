@@ -1,0 +1,6 @@
+# Temporary & build files
+pdf_content.txt
+pdf_content_utf8.txt
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apie mus — VšĮ „Santykyje“</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <meta name="description"
+        content="VšĮ „Santykyje“ — ne pelno organizacija, kurianti prieinamas psichologines iniciatyvas Lietuvoje. Sužinokite apie mūsų misiją, vertybes ir veiklą.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://santykyje.lt/apie.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://santykyje.lt/apie.html">
+    <meta property="og:title" content="Apie mus — VšĮ „Santykyje“">
+    <meta property="og:description"
+        content="Ne pelno organizacija, kurianti prieinamas psichologines iniciatyvas Lietuvoje. Sužinokite apie mūsų misiją ir veiklą.">
+    <meta property="og:image" content="https://santykyje.lt/Santykyje.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NGO",
+      "name": "VšĮ „Santykyje“",
+      "alternateName": [
+        "Viešoji įstaiga Santykyje",
+        "Public Institution in Santykis",
+        "Public Institution Santykyje"
+      ],
+      "url": "https://santykyje.lt",
+      "logo": "https://santykyje.lt/logo.svg",
+      "image": "https://santykyje.lt/Santykyje.png",
+      "description": "Ne pelno organizacija, kurianti prieinamas psichologines iniciatyvas Lietuvoje.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Paupio g. 7-4",
+        "addressLocality": "Vilnius",
+        "postalCode": "01201",
+        "addressRegion": "Vilniaus m. sav.",
+        "addressCountry": "LT"
+      },
+      "telephone": "+37068622229",
+      "email": "info@santykyje.lt",
+      "taxID": "307799595",
+      "areaServed": "LT",
+      "founder": {
+        "@type": "Person",
+        "name": "Ričardas Diržys",
+        "jobTitle": "Klinikinis psichologas, geštalto terapijos praktikas"
+      }
+    }
+    </script>
+
+    <style>
+        /* Subpage Hero override */
+        .hero {
+            min-height: 45vh !important;
+            padding: 140px 20px 50px 20px !important;
+        }
+
+        .section-intro {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .section-intro p {
+            font-size: 1.15rem;
+            line-height: 1.75;
+            color: rgba(26, 46, 38, 0.85);
+            margin-bottom: 20px;
+        }
+
+        /* Subpage-specific styling updated to match theme variables */
+        .values-block {
+            background-color: #F0EAE1;
+            padding: 80px 20px;
+        }
+
+        .values-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .value-card-sub {
+            background-color: #FAFAFC;
+            border-left: 3px solid #E8A33D;
+            padding: 30px;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(26, 46, 38, 0.02);
+        }
+
+        .value-card-sub h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1A2E26;
+            margin-bottom: 12px;
+        }
+
+        .value-card-sub p {
+            font-size: 0.95rem;
+            color: rgba(26, 46, 38, 0.75);
+            line-height: 1.6;
+        }
+
+        .team-section {
+            padding: 80px 20px;
+            background-color: #FAFAFC;
+        }
+
+        .team-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .team-card {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            background: #F0EAE1;
+            border-radius: 6px;
+            padding: 40px;
+            border: 1px solid rgba(26, 46, 38, 0.04);
+            margin-top: 30px;
+        }
+
+        .team-initials {
+            width: 70px;
+            height: 70px;
+            min-width: 70px;
+            border-radius: 50%;
+            background: #1A2E26;
+            color: #FAFAFC;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+        }
+
+        .team-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+
+        .team-info .role {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            color: #E8A33D;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .team-info p {
+            font-size: 1rem;
+            color: rgba(26, 46, 38, 0.8);
+            line-height: 1.65;
+        }
+
+        .rekvizitai-section {
+            background-color: #1A2E26;
+            color: #FAFAFC;
+            padding: 80px 20px;
+        }
+
+        .rekvizitai-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .rekvizitai-container h2 {
+            color: #FAFAFC;
+            margin-bottom: 40px;
+        }
+
+        .rek-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .rek-item {
+            border-bottom: 1px solid rgba(250, 250, 252, 0.08);
+            padding-bottom: 15px;
+        }
+
+        .rek-item label {
+            display: block;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #E8A33D;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .rek-item span {
+            font-size: 1.05rem;
+            color: rgba(250, 250, 252, 0.9);
+        }
+
+        .rek-item a {
+            color: #FAFAFC;
+            border-bottom: 1px solid rgba(250, 250, 252, 0.2);
+        }
+
+        .rek-item a:hover {
+            color: #E8A33D;
+            border-bottom-color: #E8A33D;
+        }
+
+        .goals-list {
+            margin-top: 25px;
+            padding-left: 20px;
+        }
+
+        .goals-list li {
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+            color: rgba(26, 46, 38, 0.85);
+            line-height: 1.7;
+        }
+
+        @media (max-width: 768px) {
+            .team-card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .team-initials {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hidden SVG Defs for Reusable Saulutė Symbol -->
+    <svg style="display:none" aria-hidden="true">
+        <defs>
+            <symbol id="saulute" viewBox="-30 -30 60 60">
+                <g transform="translate(-969.774, -870)">
+                    <path
+                        d="M969.274,845.955c0.047,-0.216 0.256,-0.372 0.5,-0.372c0.243,0 0.452,0.156 0.5,0.372l2.572,11.828l7.978,-9.645c0.146,-0.176 0.409,-0.235 0.628,-0.139c0.219,0.096 0.333,0.318 0.272,0.532l-3.343,11.668l11.804,-5.551c0.216,-0.102 0.481,-0.05 0.633,0.122c0.152,0.172 0.148,0.418 -0.01,0.586l-8.596,9.197l13.292,-0.359c0.243,-0.007 0.457,0.144 0.512,0.359c0.054,0.215 -0.067,0.435 -0.289,0.524l-12.147,4.905l12.147,4.905c0.222,0.09 0.343,0.309 0.289,0.524c-0.054,0.215 -0.268,0.365 -0.512,0.359l-13.292,-0.359l8.596,9.197c0.157,0.168 0.161,0.414 0.01,0.586c-0.152,0.172 -0.417,0.223 -0.633,0.122l-11.804,-5.551l3.343,11.668c0.061,0.213 -0.053,0.436 -0.272,0.532c-0.219,0.096 -0.482,0.037 -0.628,-0.139l-7.978,-9.645l-2.572,11.828c-0.047,0.216 -0.256,0.372 -0.5,0.372c-0.243,0 -0.452,-0.156 -0.5,-0.372l-2.572,-11.828l-7.978,9.645c-0.146,0.176 -0.409,0.235 -0.628,0.139c-0.219,-0.096 -0.333,-0.318 -0.272,-0.532l3.343,-11.668l-11.804,5.551c-0.216,0.102 -0.481,0.05 -0.633,-0.122c-0.152,-0.172 -0.148,-0.418 0.01,-0.586l8.596,-9.197l-13.292,0.359c-0.243,0.007 -0.457,-0.144 -0.512,-0.359c-0.054,-0.215 0.067,-0.435 0.289,-0.524l12.147,-4.905l-12.147,-4.905c-0.222,-0.09 -0.343,-0.309 -0.289,-0.524c0.054,-0.215 0.268,-0.365 0.512,-0.359l13.292,0.359l-8.596,-9.197c-0.157,-0.168 -0.161,-0.414 -0.01,-0.586c0.152,-0.172 0.417,-0.223 0.633,-0.122l11.804,5.551l-3.343,-11.668c-0.061,-0.213 0.053,-0.436 0.272,-0.532c0.219,-0.096 0.482,-0.037 0.628,0.139l7.978,9.645l2.572,-11.828Zm0.5,18.022c-3.315,0 -6.006,2.691 -6.006,6.006c0,3.315 2.691,6.006 6.006,6.006c3.315,0 6.006,-2.691 6.006,-6.006c0,-3.315 -2.691,-6.006 -6.006,-6.006Z" />
+                </g>
+            </symbol>
+        </defs>
+    </svg>
+
+    <!-- HEADER -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="logo.svg" alt="VšĮ Santykyje"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="apie.html" style="font-weight: 600; color: #E8A33D;">Apie mus</a></li>
+                    <li><a href="veikla.html">Veikla</a></li>
+                    <li><a href="projektai.html">Projektai</a></li>
+                    <li><a href="parama.html">Parama</a></li>
+                    <li><a href="kontaktai.html" class="cta-nav">Kontaktai</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-container" style="grid-template-columns: 1fr;">
+            <div class="hero-text-block" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h1>Organizacija, gimusi iš tikėjimo <em>ryšio galia</em></h1>
+                <p style="margin: 0 auto 20px auto;">Kuriame erdves, kuriose psichologinė pagalba tampa prieinama,
+                    suprantama ir žmogiška.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Baltic Star Divider -->
+    <div class="divider-container">
+        <svg class="baltic-divider" viewBox="-600 -20 1200 40" width="100%" height="32px" aria-hidden="true">
+            <line x1="-600" y1="0" x2="-20" y2="0" />
+            <line x1="20" y1="0" x2="600" y2="0" />
+            <use href="#saulute" x="-12" y="-12" width="24" height="24" fill="#E8A33D" />
+        </svg>
+    </div>
+
+    <!-- MISIJA -->
+    <section class="section-intro fade-up">
+        <span class="section-tag">Mūsų misija</span>
+        <h2>Mažinti atotrūkį ir stigmas</h2>
+        <p>VšĮ „Santykyje“ — ne pelno organizacija, įkurta siekiant mažinti atotrūkį tarp žmonių, kuriems reikia
+            psichologinės pagalbos, ir specialistų, galinčių ją suteikti. Lietuvoje psichikos sveikatos pagalbos
+            prieinamumas tebėra iššūkis: žmonės nežino, nuo ko pradėti, baiminasi stigmos arba tiesiog neranda tinkamo
+            specialisto.</p>
+        <p>Mes tikime, kad kokybiška psichologinė pagalba turi tapti norma, o ne privilegija. Todėl kuriame įrankius,
+            iniciatyvas ir erdves, kurios šį kelią padaro lengvesnį — tiek klientams, tiek specialistams.</p>
+        <p>Pavadinimas „Santykyje“ — ne atsitiktinis. Jis atspindi esminę psichoterapinių tyrimų išvadą: pokyčiai gimsta
+            ne metoduose ar technologijose, bet tikrajame santykyje — saugiame, nuoširdžiame ir gerbiant kito žmogaus
+            patirtį.</p>
+    </section>
+
+    <!-- Modern Baltic Star Divider -->
+    <div class="divider-container">
+        <svg class="baltic-divider" viewBox="-600 -20 1200 40" width="100%" height="32px" aria-hidden="true">
+            <line x1="-600" y1="0" x2="-20" y2="0" />
+            <line x1="20" y1="0" x2="600" y2="0" />
+            <use href="#saulute" x="-12" y="-12" width="24" height="24" fill="#E8A33D" />
+        </svg>
+    </div>
+
+    <!-- TIKSLAS -->
+    <section class="section-intro fade-up">
+        <span class="section-tag">Veiklos tikslai</span>
+        <h2>Strateginiai veiklos tikslai</h2>
+        <p>Šie tikslai numatyti VšĮ „Santykyje“ veiklos strategijoje ir yra mūsų organizacijos pamatas:</p>
+        <ul class="goals-list">
+            <li>Didinti psichologinių paslaugų prieinamumą visiems gyventojams, nepriklausomai nuo jų socialinės
+                padėties, geografinės vietos ar pasaulėžiūros.</li>
+            <li>Organizuoti ir vystyti psichologinius mokymus bei seminarus gyventojams ir specialistams.</li>
+            <li>Skatinti psichologinį švietimą ir didinti visuomenės psichologinį raštingumą.</li>
+            <li>Kurti ir valdyti skaitmeninius įrankius bei platformas, palengvinančias prieigą prie psichologinės
+                pagalbos.</li>
+            <li>Plėtoti organizacinius mokymus ir konsultacijas įmonėms bei organizacijoms.</li>
+        </ul>
+        <p style="margin-top: 25px; color: rgba(26, 46, 38, 0.6); font-size: 0.95rem; font-style: italic;">Visi pajamų
+            perteklius nukreipiamas išimtinai organizacijos tikslams įgyvendinti — dalininkai jo negali pasisavinti.</p>
+    </section>
+
+    <!-- VERTYBĖS -->
+    <div class="values-block">
+        <div class="values-container fade-up">
+            <span class="section-tag">Pamatiniai principai</span>
+            <h2>Mūsų vertybės</h2>
+            <div class="values-grid">
+                <div class="value-card-sub">
+                    <h3>Prieinamumas</h3>
+                    <p>Psichologinė pagalba turi būti pasiekiama kiekvienam — nepriklausomai nuo pajamų, gyvenamosios
+                        vietos ar situacijos.</p>
+                </div>
+                <div class="value-card-sub">
+                    <h3>Skaidrumas</h3>
+                    <p>Veikiame atvirai: skelbiame veiklos kryptis, naudojame paramą pagal deklaruotus tikslus ir
+                        prisiimame pilną atsakomybę.</p>
+                </div>
+                <div class="value-card-sub">
+                    <h3>Profesionalumas</h3>
+                    <p>Bendradarbiaujame tik su specialistais, laikančiais profesines etikos normas ir turinčiais
+                        tinkamą kvalifikaciją.</p>
+                </div>
+                <div class="value-card-sub">
+                    <h3>Žmogus centre</h3>
+                    <p>Kiekvienas sprendimas — technologinis, organizacinis ar komunikacinis — matuojamas tuo, ar jis
+                        tarnauja žmogui.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modern Baltic Star Divider -->
+    <div class="divider-container">
+        <svg class="baltic-divider" viewBox="-600 -20 1200 40" width="100%" height="32px" aria-hidden="true">
+            <line x1="-600" y1="0" x2="-20" y2="0" />
+            <line x1="20" y1="0" x2="600" y2="0" />
+            <use href="#saulute" x="-12" y="-12" width="24" height="24" fill="#E8A33D" />
+        </svg>
+    </div>
+
+    <!-- VADOVYBĖ -->
+    <section class="team-section fade-up">
+        <div class="team-container">
+            <span class="section-tag">Komanda</span>
+            <h2>Vadovybė</h2>
+            <div class="team-card">
+                <div class="team-initials">RD</div>
+                <div class="team-info">
+                    <h3>Ričardas Diržys</h3>
+                    <p class="role">Įkūrėjas ir direktorius</p>
+                    <p>Klinikinis psichologas ir geštalto terapijos praktikas, LHPA (Lietuvos humanistinės psichologijos
+                        asociacijos) valdybos narys, studijuojantis „Dialogas“ geštalto institute. Praktikos patirtis —
+                        individualios, porų ir grupinės terapijos, organizacinis konsultavimas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REKVIZITAI IR TEISINĖ INFORMACIJA -->
+    <section class="rekvizitai-section">
+        <div class="rekvizitai-container fade-up">
+            <h2>Teisinė informacija ir rekvizitai</h2>
+            <p class="rekvizitai-subtitle">Oficialūs viešieji VšĮ „Santykyje“ (Public Institution in Santykis) duomenys</p>
+
+            <div class="official-verification-card" style="background-color: rgba(250, 250, 252, 0.05); border-left: 4px solid #E8A33D; color: #FAFAFC; margin-bottom: 35px;">
+                <h3 style="color: #FAFAFC;">Oficialus domeno ir organizacijos nuosavybės patvirtinimas</h3>
+                <p style="color: rgba(250, 250, 252, 0.9);"><strong>LT:</strong> Interneto svetainė <strong>santykyje.lt</strong> yra oficiali Viešosios įstaigos „Santykyje“ (juridinio asmens kodas: <strong>307799595</strong>, buveinės adresas: <strong>Paupio g. 7-4, Vilnius 01201, Lietuva</strong>) interneto svetainė.</p>
+                <p class="en-note" style="color: rgba(250, 250, 252, 0.75); border-top-color: rgba(250, 250, 252, 0.15);"><strong>EN:</strong> The website <strong>santykyje.lt</strong> is the official primary website owned and operated by the non-profit organization <strong>Public Institution "In Santykis" (Viešoji įstaiga „Santykyje“)</strong>, Charity ID / Code: <strong>307799595</strong>, address: <strong>Paupio g. 7-4, Vilnius, LT-01201, Lithuania</strong>.</p>
+            </div>
+
+            <div class="rek-grid">
+                <div class="rek-item">
+                    <label>Organizacijos pavadinimas / Official Name</label>
+                    <span>Viešoji įstaiga „Santykyje“</span>
+                    <small>Public Institution "In Santykis" / "Santykyje"</small>
+                </div>
+                <div class="rek-item">
+                    <label>Juridinio asmens kodas / Charity ID</label>
+                    <span style="color: #E8A33D; font-weight: 600;">307799595</span>
+                    <small>Registration / Non-profit Tax Code</small>
+                </div>
+                <div class="rek-item">
+                    <label>Teisinė forma / Legal Status</label>
+                    <span>Viešoji įstaiga (ne pelno organizacija)</span>
+                    <small>Non-profit Public Institution</small>
+                </div>
+                <div class="rek-item">
+                    <label>Fizinis buveinės adresas / Street Address</label>
+                    <span>Paupio g. 7-4, Vilnius</span>
+                    <small>LT-01201, Lietuva (Vilniaus m. sav.)</small>
+                </div>
+                <div class="rek-item">
+                    <label>El. paštas / Email</label>
+                    <span><a href="mailto:info@santykyje.lt">info@santykyje.lt</a></span>
+                    <small>Pirminis organizacijos kontaktas</small>
+                </div>
+                <div class="rek-item">
+                    <label>Telefonas / Phone</label>
+                    <span><a href="tel:+37068622229">+370 686 22229</a></span>
+                    <small>Vadovas: Ričardas Diržys</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 VšĮ „Santykyje“ (Public Institution in Santykis, kodas: 307799595, Paupio g. 7-4, Vilnius 01201). Visos teisės saugomos.</p>
+            <p>
+                <a href="apie.html" style="margin-right: 15px;">Apie mus</a>
+                <a href="veikla.html" style="margin-right: 15px;">Veikla</a>
+                <a href="projektai.html" style="margin-right: 15px;">Projektai</a>
+                <a href="parama.html" style="margin-right: 15px;">Parama</a>
+                <a href="kontaktai.html" style="margin-right: 15px;">Kontaktai</a>
+                <a href="privatumo-politika.html">Privatumo politika</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll Entry Animations trigger
+        document.addEventListener("DOMContentLoaded", function () {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.08 });
+
+            document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+
+</html>
