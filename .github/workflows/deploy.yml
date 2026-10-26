@@ -25,7 +25,7 @@ jobs:
           protocol: ftps
           security: loose
           port: 21
-          server-dir: ./
+          server-dir: public_html/
           exclude: |
             **/.git*
             **/.git*/**
