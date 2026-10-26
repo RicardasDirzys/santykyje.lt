@@ -1169,3 +1169,134 @@ footer a:hover {
     }
 }
 
+/* ==========================================================================
+   Cookie Consent Banner (Google Consent Mode v2 & BDAR)
+   ========================================================================== */
+#santykyje-cookie-banner {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    right: 24px;
+    max-width: 480px;
+    z-index: 999999;
+    animation: cookieFadeIn 0.35s ease forwards;
+    pointer-events: auto;
+}
+
+@keyframes cookieFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#santykyje-cookie-banner.cookie-banner-hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.cookie-card {
+    background: #FFFFFF;
+    color: #1A2E26;
+    border: 1px solid rgba(26, 46, 38, 0.12);
+    border-radius: 12px;
+    box-shadow: 0 12px 35px rgba(26, 46, 38, 0.16);
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.cookie-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1A2E26;
+    margin-bottom: 6px;
+}
+
+.cookie-content p {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: rgba(26, 46, 38, 0.82);
+    margin: 0;
+}
+
+.cookie-content a {
+    color: #E8A33D;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.cookie-content a:hover {
+    color: #1A2E26;
+}
+
+.cookie-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.cookie-btn {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    outline: none;
+}
+
+.cookie-btn-accept {
+    background-color: #1A2E26;
+    color: #FFFFFF;
+    flex: 1;
+}
+
+.cookie-btn-accept:hover {
+    background-color: #E8A33D;
+    color: #FFFFFF;
+}
+
+.cookie-btn-decline {
+    background-color: transparent;
+    color: #1A2E26;
+    border: 1px solid rgba(26, 46, 38, 0.2);
+    padding: 9px 16px;
+}
+
+.cookie-btn-decline:hover {
+    background-color: rgba(26, 46, 38, 0.05);
+    border-color: rgba(26, 46, 38, 0.35);
+}
+
+@media (max-width: 600px) {
+    #santykyje-cookie-banner {
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+        max-width: none;
+    }
+    
+    .cookie-actions {
+        flex-direction: column;
+    }
+    
+    .cookie-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
