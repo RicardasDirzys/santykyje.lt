@@ -30,7 +30,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20261026_4">
 
     <!-- Structured Data (JSON-LD) for Article -->
     <script type="application/ld+json">
@@ -55,6 +55,408 @@
       "dateModified": "2026-10-26"
     }
     </script>
+
+    <!-- Resilient Baltic Modern Article Stylesheet -->
+    <style>
+        /* Article Hero Header with warm Baltic Sand background */
+        .article-hero-section {
+            background-color: #F0EAE1;
+            padding: 160px 24px 60px 24px;
+            border-bottom: 1px solid rgba(26, 46, 38, 0.08);
+            width: 100%;
+            display: block;
+        }
+
+        .article-hero-inner {
+            max-width: 860px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .article-breadcrumbs {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.88rem;
+            color: rgba(26, 46, 38, 0.65);
+            margin-bottom: 22px;
+            flex-wrap: wrap;
+        }
+
+        .article-breadcrumbs a {
+            color: #1A2E26 !important;
+            text-decoration: underline !important;
+            text-decoration-color: rgba(26, 46, 38, 0.3) !important;
+            text-underline-offset: 3px;
+            transition: color 0.2s ease;
+        }
+
+        .article-breadcrumbs a:hover {
+            color: #E8A33D !important;
+            text-decoration-color: #E8A33D !important;
+        }
+
+        .article-breadcrumbs .sep {
+            color: rgba(26, 46, 38, 0.35);
+        }
+
+        .article-breadcrumbs .current {
+            color: rgba(26, 46, 38, 0.75);
+            font-weight: 500;
+        }
+
+        .article-hero-inner .section-tag {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #A3651C;
+            background-color: rgba(232, 163, 61, 0.15);
+            padding: 5px 12px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .article-hero-inner h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2.75rem;
+            line-height: 1.25;
+            color: #1A2E26;
+            margin: 0 0 25px 0;
+            letter-spacing: -0.3px;
+        }
+
+        .article-hero-inner h1 em {
+            font-style: italic;
+            font-weight: 400;
+            color: #A3651C;
+        }
+
+        .article-meta-row {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 0.95rem;
+            color: rgba(26, 46, 38, 0.7);
+            flex-wrap: wrap;
+            padding-top: 10px;
+            border-top: 1px solid rgba(26, 46, 38, 0.1);
+        }
+
+        .article-meta-row span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Main Article Reading Container */
+        .article-main-container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 60px 24px 100px 24px;
+            box-sizing: border-box;
+            background-color: #FAFAFC;
+        }
+
+        .article-body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            font-size: 1.125rem;
+            line-height: 1.85;
+            color: #1A2E26;
+        }
+
+        .article-body p {
+            margin-bottom: 24px;
+        }
+
+        .article-lead {
+            font-size: 1.3rem;
+            line-height: 1.75;
+            color: #1A2E26;
+            font-weight: 400;
+            margin-bottom: 35px;
+            border-bottom: 1px solid rgba(26, 46, 38, 0.08);
+            padding-bottom: 25px;
+        }
+
+        .article-body h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.95rem;
+            line-height: 1.35;
+            color: #1A2E26;
+            margin-top: 55px;
+            margin-bottom: 22px;
+            letter-spacing: -0.2px;
+            border-bottom: 2px solid rgba(232, 163, 61, 0.3);
+            padding-bottom: 10px;
+        }
+
+        .article-body h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.45rem;
+            color: #1A2E26;
+            margin-top: 35px;
+            margin-bottom: 16px;
+        }
+
+        /* In-text Links with high contrast & amber underline */
+        .article-body a {
+            color: #A3651C !important;
+            font-weight: 600 !important;
+            text-decoration: underline !important;
+            text-decoration-color: #E8A33D !important;
+            text-decoration-thickness: 2px !important;
+            text-underline-offset: 4px !important;
+            transition: all 0.2s ease;
+        }
+
+        .article-body a:hover {
+            color: #1A2E26 !important;
+            background-color: rgba(232, 163, 61, 0.18) !important;
+            border-radius: 3px !important;
+        }
+
+        /* Stage / Role Box */
+        .stage-box-list {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            margin: 35px 0;
+        }
+
+        .stage-box {
+            background-color: #FFFFFF;
+            border: 1px solid rgba(26, 46, 38, 0.1);
+            border-left: 5px solid #E8A33D;
+            border-radius: 6px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(26, 46, 38, 0.03);
+        }
+
+        .stage-box-badge {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: #A3651C;
+            background-color: #F0EAE1;
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+        }
+
+        .stage-box h4 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.35rem;
+            color: #1A2E26;
+            margin-bottom: 12px;
+        }
+
+        .stage-box p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: rgba(26, 46, 38, 0.88);
+            margin: 0;
+        }
+
+        /* Highlight Callout Box */
+        .callout-box {
+            background-color: #F0EAE1;
+            border-left: 4px solid #1A2E26;
+            border-radius: 4px;
+            padding: 32px;
+            margin: 40px 0;
+        }
+
+        .callout-box h4 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.35rem;
+            color: #1A2E26;
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        .callout-box p {
+            margin-bottom: 14px;
+            font-size: 1.05rem;
+            line-height: 1.75;
+        }
+
+        .callout-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Prominent CTA Box to TerapijosGidas */
+        .cta-action-card {
+            background-color: #1A2E26;
+            color: #FAFAFC;
+            border-radius: 8px;
+            padding: 45px 40px;
+            margin: 60px 0 40px 0;
+            box-shadow: 0 16px 36px rgba(26, 46, 38, 0.15);
+            text-align: left;
+        }
+
+        .cta-action-card .section-tag {
+            color: #E8A33D;
+            margin-bottom: 12px;
+        }
+
+        .cta-action-card h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.85rem;
+            color: #FAFAFC;
+            margin: 0 0 16px 0;
+            line-height: 1.3;
+        }
+
+        .cta-action-card p {
+            font-size: 1.08rem;
+            line-height: 1.75;
+            color: rgba(250, 250, 252, 0.88);
+            margin-bottom: 25px;
+        }
+
+        .cta-action-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background-color: #E8A33D;
+            color: #1A2E26 !important;
+            font-weight: 700 !important;
+            font-size: 1.05rem;
+            padding: 16px 32px;
+            border-radius: 4px;
+            text-decoration: none !important;
+            transition: all 0.25s ease;
+            box-shadow: 0 6px 18px rgba(232, 163, 61, 0.4);
+        }
+
+        .cta-action-btn:hover {
+            background-color: #FAFAFC;
+            color: #1A2E26 !important;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Related Articles Prominent Cards */
+        .more-guides-section {
+            margin-top: 70px;
+            padding-top: 50px;
+            border-top: 2px solid rgba(26, 46, 38, 0.1);
+        }
+
+        .more-guides-section h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.7rem;
+            margin-bottom: 28px;
+            color: #1A2E26;
+        }
+
+        .guides-cards-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .guide-item-card {
+            background-color: #FFFFFF;
+            border: 1px solid rgba(26, 46, 38, 0.12);
+            border-top: 4px solid #E8A33D;
+            border-radius: 8px;
+            padding: 30px 26px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 18px rgba(26, 46, 38, 0.04);
+        }
+
+        .guide-item-card:hover {
+            border-color: #E8A33D;
+            border-top: 4px solid #A3651C;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(26, 46, 38, 0.09);
+        }
+
+        .guide-item-card h4 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.3rem;
+            line-height: 1.38;
+            margin: 12px 0 12px 0;
+        }
+
+        .guide-item-card h4 a {
+            color: #1A2E26 !important;
+            text-decoration: underline !important;
+            text-decoration-color: #E8A33D !important;
+            text-decoration-thickness: 2px !important;
+            text-underline-offset: 4px !important;
+            transition: all 0.2s ease;
+        }
+
+        .guide-item-card:hover h4 a {
+            color: #A3651C !important;
+            text-decoration-color: #A3651C !important;
+        }
+
+        .guide-item-card p {
+            font-size: 0.98rem;
+            line-height: 1.65;
+            color: rgba(26, 46, 38, 0.82);
+            margin: 0 0 20px 0;
+        }
+
+        .guide-read-link {
+            font-size: 0.95rem;
+            font-weight: 700 !important;
+            color: #1A2E26 !important;
+            background-color: #F0EAE1;
+            padding: 10px 20px;
+            border-radius: 4px;
+            border: 1px solid rgba(232, 163, 61, 0.45);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none !important;
+            margin-top: 10px;
+            transition: all 0.22s ease;
+            align-self: flex-start;
+        }
+
+        .guide-item-card:hover .guide-read-link,
+        .guide-read-link:hover {
+            background-color: #E8A33D;
+            color: #1A2E26 !important;
+            border-color: #E8A33D;
+            transform: translateX(4px);
+            box-shadow: 0 4px 12px rgba(232, 163, 61, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .article-hero-section {
+                padding: 130px 20px 45px 20px;
+            }
+            .article-hero-inner h1 {
+                font-size: 2.1rem;
+            }
+            .article-main-container {
+                padding: 40px 18px 70px 18px;
+            }
+            .guides-cards-grid {
+                grid-template-columns: 1fr;
+            }
+            .cta-action-card {
+                padding: 30px 20px;
+            }
+            .cta-action-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -75,11 +477,10 @@
         </div>
     </header>
 
-    <!-- Header Section with Baltic Sand Background -->
-    <section class="article-page-header">
-        <div class="article-header-container">
-            <!-- Breadcrumbs -->
-            <nav class="breadcrumbs" aria-label="Navigacija">
+    <!-- Header Section with Baltic Sand Background & Breathing Room -->
+    <section class="article-hero-section">
+        <div class="article-hero-inner">
+            <nav class="article-breadcrumbs" aria-label="Navigacija">
                 <a href="index.html">Pradžia</a>
                 <span class="sep">/</span>
                 <a href="straipsniai.html">Švietimas ir straipsniai</a>
@@ -90,7 +491,7 @@
             <span class="section-tag">Visuomeninis švietimas • Pagalbos gidas</span>
             <h1>Kaip išsirinkti psichologą, psichoterapeutą ar specialistą: gidas <em>pradedančiajam</em></h1>
             
-            <div class="article-meta-bar">
+            <div class="article-meta-row">
                 <span>⏱️ ~7 min. skaitymo</span>
                 <span>🌿 Profesinės atrankos gairės</span>
                 <span>📍 Autorius: VšĮ „Santykyje“ švietimo iniciatyva</span>
@@ -98,15 +499,15 @@
         </div>
     </section>
 
-    <!-- Article Content -->
-    <main class="article-body-wrapper">
-        <article class="article-content">
+    <!-- Main Article Body -->
+    <main class="article-main-container">
+        <article class="article-body">
             <p class="article-lead">
                 Sprendimas kreiptis į psichologinio palaikymo ar psichikos sveikatos specialistą dažnai reikalauja nemenkos vidinės drąsos ir pažeidžiamumo pripažinimo. Tačiau žengus šį svarbų žingsnį, daugelis susiduria su didele profesine painiava: kuo skiriasi psichologas, psichiatras ir psichoterapeutas? Ką reiškia gausybė terapinių krypčių santrumpų? Ir svarbiausia – kaip žinoti, ar pasirinktas žmogus iš tiesų gebės sukurti saugią erdvę ir padėti pasiekti teigiamų pokyčių?
             </p>
 
             <p>
-                Šis gidas parengtas tam, kad suteiktų aiškumo, padėtų suprasti pagrindinius atrankos kriterijus ir užtikrintų, kad jūsų pirmasis susitikimas su specialistu būtų saugus, skaidrus ir prasmingas.
+                Šis gidas parengtas tam, kad suteiktų aiškumo, padėtų suprasti pagrindinius atrankos kriterijus ir užtikrintų, kad jūsų pirmasis susitikimas su specialistu būtų saugus, skaidrus ir prasmingas. Priklausomai nuo to, ar ieškote pagalbos dėl <a href="emocinis-perdegimas.html">profesinio perdegimo ir išsekimo</a>, sekinančio <a href="nerimo-valdymas.html">nerimo ir panikos priepuolių</a>, ar <a href="santykiu-krize.html">poros santykių krizės</a>, atrankos akcentai gali skirtis.
             </p>
 
             <h2>Trys skirtingos profesijos: kas yra kas?</h2>
@@ -114,25 +515,25 @@
                 Visuomenėje šios trys sąvokos neretai vartojamos kaip sinonimai, tačiau jų išsilavinimas, kompetencijos ir darbo metodai skiriasi iš esmės:
             </p>
 
-            <div class="stage-card-list">
-                <div class="stage-card">
-                    <span class="stage-badge">Profesija 01</span>
+            <div class="stage-box-list">
+                <div class="stage-box">
+                    <span class="stage-box-badge">Profesija 01</span>
                     <h4>Psichologas</h4>
                     <p>
                         Tai specialistas, baigęs universitetines psichologijos bakalauro ir magistro studijas (bent 5–6 metus studijų). Psichologas konsultuoja išgyvenant krizes, netektis, santykių sunkumus, padeda stiprinti savivertę, atpažinti emocijas bei atlieka psichologinį įvertinimą. Svarbu žinoti: psichologas nediagnozuoja psichikos ligų ir neturi teisės išrašyti vaistų.
                     </p>
                 </div>
 
-                <div class="stage-card">
-                    <span class="stage-badge">Profesija 02</span>
+                <div class="stage-box">
+                    <span class="stage-box-badge">Profesija 02</span>
                     <h4>Gydytojas psichiatras</h4>
                     <p>
                         Tai medicinos gydytojas, baigęs medicinos studijas ir psichiatrijos rezidentūrą. Psichiatras vertina žmogaus būseną medicininiu ir neurobiologiniu požiūriu: diagnozuoja klinikinius sutrikimus (depresiją, nerimo sutrikimus, bipolinį sutrikimą ir kt.) bei skiria medikamentinį gydymą. Dažnai geriausių rezultatų pasiekiama, kai psichiatro skiriamas gydymas derinamas su reguliaria psichoterapija.
                     </p>
                 </div>
 
-                <div class="stage-card">
-                    <span class="stage-badge">Profesija 03</span>
+                <div class="stage-box">
+                    <span class="stage-box-badge">Profesija 03</span>
                     <h4>Psichoterapeutas</h4>
                     <p>
                         Tai specialistas (paprastai psichologas arba gydytojas), kuris po pagrindinių universitetinių studijų baigė papildomas ilgametes (3–5 metų trukmės) podiplomines psichoterapijos studijas pagal konkrečią moksliškai pagrįstą psichoterapijos kryptį. Psichoterapija yra gilesnis, sistemingas procesas, skirtas ilgalaikiams asmenybės pokyčiams, trauminių patirčių perdirbimui ir gilių pasikartojančių modelių keitimui.
@@ -145,33 +546,33 @@
                 Šiuolaikiniame psichologijos moksle egzistuoja keletas pripažintų krypčių. Nėra vieno „teisingiausio“ metodo – kiekviena kryptis turi savo stipriąsias puses, o pasirinkimas priklauso nuo jūsų individualių poreikių ir asmenybės:
             </p>
 
-            <div class="stage-card-list">
-                <div class="stage-card">
-                    <span class="stage-badge">Kryptis 01</span>
+            <div class="stage-box-list">
+                <div class="stage-box">
+                    <span class="stage-box-badge">Kryptis 01</span>
                     <h4>Dėmesys dabarties momentui, kūnui ir kontaktui</h4>
                     <p>
                         Šios kryptys (pvz., geštalto, somatinė terapija) fokusuoja dėmesį į patyrimą „čia ir dabar“. Mokomasi pastebėti kūno signalus, išreikšti užslopintus jausmus, atpažinti savo elgesio modelius gyvame santykyje su specialistu. Itin tinka tiems, kurie jaučiasi „įstrigę galvoje“ ir nori atkurti ryšį su savo kūnu bei emocijomis.
                     </p>
                 </div>
 
-                <div class="stage-card">
-                    <span class="stage-badge">Kryptis 02</span>
+                <div class="stage-box">
+                    <span class="stage-box-badge">Kryptis 02</span>
                     <h4>Kognityvinės, elgesio ir į sprendimus orientuotos kryptys</h4>
                     <p>
                         Šios kryptys (pvz., KET, schemų terapija) yra labiau struktūruotos, orientuotos į konkrečius tikslus ir problemų sprendimą. Tiriama, kaip automatinės mintys veikia jausmus ir elgesį, atliekami praktiniai namų darbai, mokomasi elgesio eksperimentų. Labai tinka ieškantiems aiškios struktūros, dirbant su panikos atakomis ar fobijomis.
                     </p>
                 </div>
 
-                <div class="stage-card">
-                    <span class="stage-badge">Kryptis 03</span>
+                <div class="stage-box">
+                    <span class="stage-box-badge">Kryptis 03</span>
                     <h4>Egzistencinės ir humanistinės kryptys</h4>
                     <p>
                         Gilinasi į pamatinius žmogaus būties klausimus: gyvenimo prasmės paieškas, vienatvę, laisvę, atsakomybę ir mirtingumą. Pagrindinis dėmesys skiriamas autentiškumui ir paties žmogaus vidiniam potencialui augti. Puikiai tinka išgyvenantiems amžiaus tarpsnių lūžius, vertybių krizes ar prasmės praradimą.
                     </p>
                 </div>
 
-                <div class="stage-card">
-                    <span class="stage-badge">Kryptis 04</span>
+                <div class="stage-box">
+                    <span class="stage-box-badge">Kryptis 04</span>
                     <h4>Psichodinaminės ir psichoanalitinės kryptys</h4>
                     <p>
                         Nagrinėja pasąmoninius procesus, ankstyvosios vaikystės patirtis ir santykius su pirminiais globėjais. Tiriami gynybiniai mechanizmai ir tai, kaip praeities modeliai nesąmoningai atkartojami dabartyje. Tinka ieškantiems gilaus savęs pažinimo ir norintiems suprasti šaknines pasikartojančių sunkumų priežastis.
@@ -179,7 +580,7 @@
                 </div>
             </div>
 
-            <div class="article-highlight-box">
+            <div class="callout-box">
                 <h4>Esminė mokslinių tyrimų išvada:</h4>
                 <p>
                     Dešimtmečius trunkantys psichoterapijos veiksmingumo tyrimai vieningai rodo: <strong>terapinės pagalbos sėkmę labiausiai lemia ne konkreti metodinė mokykla, o terapinis ryšys</strong> – pasitikėjimo, priėmimo ir saugumo jausmas, kurį patiriate būdami su pasirinktu specialistu.
@@ -191,11 +592,11 @@
                 Pirmasis susitikimas yra skirtas abipusiam susipažinimui. Jūs turite visišką teisę užduoti specialistui klausimus apie jo pasirengimą ir darbo principus:
             </p>
 
-            <ul>
-                <li><strong>Išsilavinimas ir kvalifikacija:</strong> „Kokį universitetinį išsilavinimą ir kokią psichoterapijos kryptį esate baigęs (ar studijuojate)?“</li>
-                <li><strong>Profesinė priežiūra:</strong> „Ar lankote reguliarias supervizijas?“ (Profesionalus specialistas visada lanko supervizijas – atvejų aptarimą su labiau patyrusiais kolegomis, užtikrinantį darbo kokybę).</li>
-                <li><strong>Patirtis su jūsų tema:</strong> „Ar dažnai dirbate su tokio pobūdžio sunkumais, kuriuos aš išgyvenu?“</li>
-                <li><strong>Bendradarbiavimo rėmai:</strong> Koks yra susitikimų dažnumas, atšaukimo taisyklės ir konfidencialumo ribos?</li>
+            <ul style="padding-left: 24px; margin-bottom: 30px;">
+                <li style="margin-bottom: 10px;"><strong>Išsilavinimas ir kvalifikacija:</strong> „Kokį universitetinį išsilavinimą ir kokią psichoterapijos kryptį esate baigęs (ar studijuojate)?“</li>
+                <li style="margin-bottom: 10px;"><strong>Profesinė priežiūra:</strong> „Ar lankote reguliarias supervizijas?“ (Profesionalus specialistas visada lanko supervizijas – atvejų aptarimą su labiau patyrusiais kolegomis, užtikrinantį darbo kokybę).</li>
+                <li style="margin-bottom: 10px;"><strong>Patirtis su jūsų tema:</strong> „Ar dažnai dirbate su tokio pobūdžio sunkumais, kuriuos aš išgyvenu?“</li>
+                <li style="margin-bottom: 10px;"><strong>Bendradarbiavimo rėmai:</strong> Koks yra susitikimų dažnumas, atšaukimo taisyklės ir konfidencialumo ribos?</li>
             </ul>
 
             <h2>Kaip jaustis saugiai: profesinės etikos ribos</h2>
@@ -204,33 +605,44 @@
             </p>
 
             <!-- Prominent High-Contrast Call to Action Box for TerapijosGidas.lt -->
-            <div class="article-cta-box">
+            <div class="cta-action-card">
                 <span class="section-tag">Atranka ir skaidrumas</span>
                 <h3>Ieškote patikimo specialisto?</h3>
                 <p>
                     Platformoje <a href="https://terapijosgidas.lt" target="_blank" rel="noopener" style="color: #E8A33D !important; text-decoration: underline !important;">TerapijosGidas.lt</a> galite skaidriai ir patogiai filtruoti specialistus pagal miestą, konsultavimo formą (gyvai ar nuotoliu), darbo kryptį bei patirtį. Čia rasite patikrintus profesionalus be jokių registracijos ar tarpininkavimo mokesčių.
                 </p>
                 <div>
-                    <a href="https://terapijosgidas.lt" target="_blank" rel="noopener" class="article-cta-btn">
+                    <a href="https://terapijosgidas.lt" target="_blank" rel="noopener" class="cta-action-btn">
                         Atraskite savo specialistą platformoje TerapijosGidas.lt ➔
                     </a>
                 </div>
             </div>
         </article>
 
-        <!-- Related articles -->
-        <section class="related-articles">
-            <h3>Kiti naudingi gidai</h3>
-            <div class="related-grid">
-                <div class="related-card">
-                    <span class="article-tag" style="margin-bottom: 12px;">Emocinė gerovė</span>
-                    <h4><a href="emocinis-perdegimas.html">Emocinis perdegimas: kaip atpažinti 5 etapus ir kada ieškoti palaikymo?</a></h4>
-                    <p>Sužinokite, kaip atpažinti lėtinio streso etapus ir atkurti resursus.</p>
+        <!-- Related articles section with prominent cards -->
+        <section class="more-guides-section">
+            <h3>Kiti naudingi gidai ir švietimo straipsniai</h3>
+            <div class="guides-cards-grid">
+                <div class="guide-item-card">
+                    <div>
+                        <span class="stage-box-badge">Emocinė gerovė</span>
+                        <h4><a href="emocinis-perdegimas.html">Emocinis perdegimas: kaip atpažinti 5 etapus ir kada ieškoti palaikymo?</a></h4>
+                        <p>Sužinokite, kaip atpažinti lėtinio streso etapus, atkurti resursus ir apsaugoti asmenines ribas.</p>
+                    </div>
+                    <div>
+                        <a href="emocinis-perdegimas.html" class="guide-read-link">Skaityti gidą &rarr;</a>
+                    </div>
                 </div>
-                <div class="related-card">
-                    <span class="article-tag" style="margin-bottom: 12px;">Streso valdymas</span>
-                    <h4><a href="nerimo-valdymas.html">Kaip suvaldyti nerimą: 4 įžeminimo ir kvėpavimo pratimai čia ir dabar</a></h4>
-                    <p>Praktinis vadovas, padedantis nuraminti vegetacinę nervų sistemą.</p>
+
+                <div class="guide-item-card">
+                    <div>
+                        <span class="stage-box-badge">Streso valdymas</span>
+                        <h4><a href="nerimo-valdymas.html">Kaip suvaldyti nerimą: 4 įžeminimo ir kvėpavimo pratimai čia ir dabar</a></h4>
+                        <p>Praktinis vadovas, padedantis nuraminti vegetacinę nervų sistemą ir suvaldyti ūmų nerimą.</p>
+                    </div>
+                    <div>
+                        <a href="nerimo-valdymas.html" class="guide-read-link">Skaityti gidą &rarr;</a>
+                    </div>
                 </div>
             </div>
         </section>

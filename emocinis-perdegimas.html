@@ -20,17 +20,10 @@
     <meta property="og:description" content="Kas yra emocinis perdegimas ir kuo jis skiriasi nuo paprasto nuovargio? Sužinokite 5 perdegimo etapus, kūno signalus ir praktinius žingsnius, kaip atgauti jėgas.">
     <meta property="og:image" content="https://santykyje.lt/Santykyje.png">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://santykyje.lt/emocinis-perdegimas.html">
-    <meta property="twitter:title" content="Emocinis perdegimas: kaip atpažinti 5 etapus ir kada ieškoti palaikymo?">
-    <meta property="twitter:description" content="Kas yra emocinis perdegimas ir kuo jis skiriasi nuo paprasto nuovargio? Sužinokite 5 perdegimo etapus, kūno signalus ir praktinius žingsnius, kaip atgauti jėgas.">
-    <meta property="twitter:image" content="https://santykyje.lt/Santykyje.png">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20261026_3">
 
     <!-- Structured Data (JSON-LD) for Article -->
     <script type="application/ld+json">
@@ -55,6 +48,418 @@
       "dateModified": "2026-10-26"
     }
     </script>
+
+    <!-- Embedded fail-safe styles matching Santykyje design system -->
+    <style>
+        /* Article Hero Section */
+        .article-hero-section {
+            background-color: #F0EAE1;
+            padding: 160px 24px 60px 24px;
+            border-bottom: 1px solid rgba(26, 46, 38, 0.08);
+            text-align: center;
+        }
+
+        .article-hero-inner {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .article-breadcrumbs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+            color: rgba(26, 46, 38, 0.7);
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .article-breadcrumbs a {
+            color: #1A2E26;
+            font-weight: 500;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .article-breadcrumbs a:hover {
+            color: #E8A33D;
+        }
+
+        .article-hero-inner h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2.8rem;
+            line-height: 1.25;
+            color: #1A2E26;
+            margin: 15px 0 25px 0;
+            letter-spacing: -0.3px;
+        }
+
+        .article-hero-inner h1 em {
+            font-style: italic;
+            color: #D48C70;
+        }
+
+        .article-meta-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            font-size: 0.92rem;
+            color: rgba(26, 46, 38, 0.75);
+            padding-top: 15px;
+            border-top: 1px solid rgba(26, 46, 38, 0.1);
+            flex-wrap: wrap;
+        }
+
+        /* Reading Body Container */
+        .article-main-container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 60px 24px 100px 24px;
+        }
+
+        .article-body {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.12rem;
+            line-height: 1.85;
+            color: #1A2E26;
+        }
+
+        .article-body p {
+            margin-bottom: 26px;
+        }
+
+        .article-lead-p {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            color: #1A2E26;
+            padding-bottom: 28px;
+            margin-bottom: 35px;
+            border-bottom: 1px solid rgba(26, 46, 38, 0.12);
+        }
+
+        .article-body h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2.1rem;
+            line-height: 1.3;
+            color: #1A2E26;
+            margin: 55px 0 25px 0;
+            padding-bottom: 12px;
+            border-bottom: 2px solid rgba(26, 46, 38, 0.08);
+        }
+
+        .article-body h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.5rem;
+            line-height: 1.35;
+            color: #1A2E26;
+            margin: 35px 0 16px 0;
+        }
+
+        /* HIGH-CONTRAST IN-TEXT LINKS */
+        .article-body a {
+            color: #A3651C !important;
+            font-weight: 600 !important;
+            text-decoration: underline !important;
+            text-decoration-color: #E8A33D !important;
+            text-decoration-thickness: 2px !important;
+            text-underline-offset: 4px !important;
+            transition: all 0.2s ease !important;
+            padding: 0 2px !important;
+        }
+
+        .article-body a:hover {
+            color: #1A2E26 !important;
+            background-color: rgba(232, 163, 61, 0.18) !important;
+            border-radius: 3px !important;
+        }
+
+        /* Stage Cards (Etapai) */
+        .stage-box-list {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            margin: 35px 0;
+        }
+
+        .stage-box {
+            background-color: #FAFAFC;
+            border: 1px solid rgba(26, 46, 38, 0.08);
+            border-left: 4px solid #E8A33D;
+            border-radius: 6px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(26, 46, 38, 0.02);
+        }
+
+        .stage-box-badge {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: #A3651C;
+            background-color: #F0EAE1;
+            padding: 4px 10px;
+            border-radius: 3px;
+            margin-bottom: 12px;
+        }
+
+        .stage-box h4 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.35rem;
+            color: #1A2E26;
+            margin-bottom: 12px;
+        }
+
+        .stage-box p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: rgba(26, 46, 38, 0.88);
+            margin: 0;
+        }
+
+        /* Comparison Grid */
+        .contrast-table-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin: 35px 0;
+        }
+
+        .contrast-col {
+            background-color: #FAFAFC;
+            border: 1px solid rgba(26, 46, 38, 0.1);
+            border-radius: 6px;
+            padding: 28px 24px;
+        }
+
+        .contrast-col.col-normal {
+            border-top: 4px solid #1A2E26;
+        }
+
+        .contrast-col.col-burnout {
+            border-top: 4px solid #E8A33D;
+            background-color: #FFFDF9;
+        }
+
+        .contrast-col h4 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.3rem;
+            margin-bottom: 16px;
+            color: #1A2E26;
+        }
+
+        .contrast-col ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .contrast-col li {
+            font-size: 0.98rem;
+            line-height: 1.65;
+            margin-bottom: 10px;
+            color: rgba(26, 46, 38, 0.88);
+        }
+
+        /* Highlight Callout Box */
+        .callout-box {
+            background-color: #F0EAE1;
+            border-left: 4px solid #1A2E26;
+            border-radius: 4px;
+            padding: 32px;
+            margin: 40px 0;
+        }
+
+        .callout-box h4 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.35rem;
+            color: #1A2E26;
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        .callout-box p {
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+            line-height: 1.75;
+        }
+
+        .callout-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Prominent CTA Box to TerapijosGidas */
+        .cta-action-card {
+            background-color: #1A2E26;
+            color: #FAFAFC;
+            border-radius: 8px;
+            padding: 45px 40px;
+            margin: 60px 0 40px 0;
+            box-shadow: 0 16px 36px rgba(26, 46, 38, 0.15);
+            text-align: left;
+        }
+
+        .cta-action-card .section-tag {
+            color: #E8A33D;
+            margin-bottom: 12px;
+        }
+
+        .cta-action-card h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.85rem;
+            color: #FAFAFC;
+            margin: 0 0 16px 0;
+            line-height: 1.3;
+        }
+
+        .cta-action-card p {
+            font-size: 1.08rem;
+            line-height: 1.75;
+            color: rgba(250, 250, 252, 0.88);
+            margin-bottom: 25px;
+        }
+
+        .cta-action-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background-color: #E8A33D;
+            color: #1A2E26 !important;
+            font-weight: 700 !important;
+            font-size: 1.05rem;
+            padding: 16px 32px;
+            border-radius: 4px;
+            text-decoration: none !important;
+            transition: all 0.25s ease;
+            box-shadow: 0 6px 18px rgba(232, 163, 61, 0.4);
+        }
+
+        .cta-action-btn:hover {
+            background-color: #FAFAFC;
+            color: #1A2E26 !important;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Related Articles Prominent Cards */
+        .more-guides-section {
+            margin-top: 70px;
+            padding-top: 50px;
+            border-top: 2px solid rgba(26, 46, 38, 0.1);
+        }
+
+        .more-guides-section h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.7rem;
+            margin-bottom: 28px;
+            color: #1A2E26;
+        }
+
+        .guides-cards-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .guide-item-card {
+            background-color: #FFFFFF;
+            border: 1px solid rgba(26, 46, 38, 0.12);
+            border-top: 4px solid #E8A33D;
+            border-radius: 8px;
+            padding: 30px 26px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 18px rgba(26, 46, 38, 0.04);
+        }
+
+        .guide-item-card:hover {
+            border-color: #E8A33D;
+            border-top: 4px solid #A3651C;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(26, 46, 38, 0.09);
+        }
+
+        .guide-item-card h4 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.3rem;
+            line-height: 1.38;
+            margin: 12px 0 12px 0;
+        }
+
+        .guide-item-card h4 a {
+            color: #1A2E26 !important;
+            text-decoration: underline !important;
+            text-decoration-color: #E8A33D !important;
+            text-decoration-thickness: 2px !important;
+            text-underline-offset: 4px !important;
+            transition: all 0.2s ease;
+        }
+
+        .guide-item-card:hover h4 a {
+            color: #A3651C !important;
+            text-decoration-color: #A3651C !important;
+        }
+
+        .guide-item-card p {
+            font-size: 0.98rem;
+            line-height: 1.65;
+            color: rgba(26, 46, 38, 0.82);
+            margin: 0 0 20px 0;
+        }
+
+        .guide-read-link {
+            font-size: 0.95rem;
+            font-weight: 700 !important;
+            color: #1A2E26 !important;
+            background-color: #F0EAE1;
+            padding: 10px 20px;
+            border-radius: 4px;
+            border: 1px solid rgba(232, 163, 61, 0.45);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none !important;
+            margin-top: 10px;
+            transition: all 0.22s ease;
+            align-self: flex-start;
+        }
+
+        .guide-item-card:hover .guide-read-link,
+        .guide-read-link:hover {
+            background-color: #E8A33D;
+            color: #1A2E26 !important;
+            border-color: #E8A33D;
+            transform: translateX(4px);
+            box-shadow: 0 4px 12px rgba(232, 163, 61, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .article-hero-section {
+                padding: 130px 20px 45px 20px;
+            }
+            .article-hero-inner h1 {
+                font-size: 2.1rem;
+            }
+            .article-main-container {
+                padding: 40px 18px 70px 18px;
+            }
+            .contrast-table-grid,
+            .guides-cards-grid {
+                grid-template-columns: 1fr;
+            }
+            .cta-action-card {
+                padding: 30px 22px;
+            }
+            .cta-action-btn {
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -75,33 +480,32 @@
         </div>
     </header>
 
-    <!-- Header Section with Baltic Sand Background -->
-    <section class="article-page-header">
-        <div class="article-header-container">
-            <!-- Breadcrumbs -->
-            <nav class="breadcrumbs" aria-label="Navigacija">
+    <!-- Header Section with Clear Top Margin and White Space -->
+    <section class="article-hero-section">
+        <div class="article-hero-inner">
+            <nav class="article-breadcrumbs" aria-label="Navigacija">
                 <a href="index.html">Pradžia</a>
-                <span class="sep">/</span>
+                <span>/</span>
                 <a href="straipsniai.html">Švietimas ir straipsniai</a>
-                <span class="sep">/</span>
-                <span class="current">Emocinis perdegimas</span>
+                <span>/</span>
+                <span>Emocinis perdegimas</span>
             </nav>
 
             <span class="section-tag">Visuomeninis švietimas • Emocinė gerovė</span>
             <h1>Emocinis perdegimas: kaip atpažinti 5 etapus ir kada ieškoti <em>palaikymo</em>?</h1>
             
-            <div class="article-meta-bar">
+            <div class="article-meta-row">
                 <span>⏱️ ~6 min. skaitymo</span>
                 <span>🌿 Moksliškai grįstas gidas</span>
-                <span>📍 Autorius: VšĮ „Santykyje“ švietimo iniciatyva</span>
+                <span>📍 VšĮ „Santykyje“ švietimo iniciatyva</span>
             </div>
         </div>
     </section>
 
-    <!-- Article Content -->
-    <main class="article-body-wrapper">
-        <article class="article-content">
-            <p class="article-lead">
+    <!-- Reading Container with Comfortable Margins -->
+    <main class="article-main-container">
+        <article class="article-body">
+            <p class="article-lead-p">
                 Šiuolaikinėje kultūroje, kurioje nuolatinis pasiekiamumas, profesinis hiperaktyvumas ir produktyvumas dažnai klaidingai prilyginami asmeninei vertei, riba tarp sveiko profesinio įsitraukimo ir visiško vidinio išsekimo tampa itin trapi. Nors daugelis iš mūsų patiriame sunkesnių dienų ar savaičių, kai jaučiamės pavargę, emocinis perdegimas yra gerokai gilesnė būsena nei įprastas energijos trūkumas po intensyvaus projekto ar bemiegės nakties.
             </p>
 
@@ -114,41 +518,41 @@
                 Perdegimo sindromas neištinka netikėtai per vieną dieną. Tai laipsniškas, klastingas procesas, kurį ankstyvosiose fazėse atpažinti būna sunku, nes žmogus pats save įtikinėja, kad tiesiog „reikia dar šiek tiek pasistengti“. Psichologinėje praktikoje išskiriami penki nuoseklūs etapai:
             </p>
 
-            <div class="stage-card-list">
-                <div class="stage-card">
-                    <span class="stage-badge">01 etapas</span>
+            <div class="stage-box-list">
+                <div class="stage-box">
+                    <span class="stage-box-badge">01 etapas</span>
                     <h4>„Medaus mėnuo“ ir perdėtas entuziazmas</h4>
                     <p>
                         Pradedant naują veiklą, projektą ar pareigas, žmogus jaučia milžinišką euforiją ir ambiciją. Jis savanoriškai dirba viršvalandžius, atsisako pietų pertraukų ir laisvalaikio su artimaisiais, ignoruodamas natūralų poilsio poreikį. Kadangi pasiekiami pirmieji džiuginantys rezultatai, atrodo, kad energija niekada nesibaigs. Būtent šiame etape pasėjama perdegimo sėkla – formuojasi įprotis eikvoti resursus jų neatkuriant.
                     </p>
                 </div>
 
-                <div class="stage-card">
-                    <span class="stage-badge">02 etapas</span>
+                <div class="stage-box">
+                    <span class="stage-box-badge">02 etapas</span>
                     <h4>Streso pradžia ir pirmieji kūno signalai</h4>
                     <p>
                         Pirminis entuziazmas pamažu blėsta, o atsakomybių našta ir energijos sąnaudos išlieka maksimalios. Kūnas ima siųsti pirmuosius somatinius signalus: tampa sunkiau užmigti sekmadienio vakarais, pabundama vidury nakties su nerimo mintimis apie neatliktus darbus, atsiranda raumenų įtampa pečių juostoje, dažnesni galvos skausmai. Bendravime ima trūkti kantrybės, kyla susierzinimas dėl smulkmenų.
                     </p>
                 </div>
 
-                <div class="stage-card">
-                    <span class="stage-badge">03 etapas</span>
+                <div class="stage-box">
+                    <span class="stage-box-badge">03 etapas</span>
                     <h4>Lėtinis stresas ir kognityvinis išsekimas</h4>
                     <p>
                         Stresinė būsena tampa kasdiene norma. Atsiranda vadinamasis „smegenų rūkas“ (angl. <em>brain fog</em>) – tampa sunku susikaupti, priimti paprastus sprendimus, vėluoja užduočių atlikimas, prasideda chroniškas atidėliojimas (prokrastinacija). Žmogų pradeda kamuoti nuolatinis kaltės jausmas, kad jis „nespėja ir nepateisina lūkesčių“. Pradeda formuotis gynybinis atsiribojimas nuo kolegų, draugų ir šeimos narių.
                     </p>
                 </div>
 
-                <div class="stage-card">
-                    <span class="stage-badge">04 etapas</span>
+                <div class="stage-box">
+                    <span class="stage-box-badge">04 etapas</span>
                     <h4>Tikrasis perdegimas ir krizė</h4>
                     <p>
                         Kritinis taškas, kai vidiniai resursai visiškai išsenka. Žmogus tampa visiškai abejingas veiklai, kuri anksčiau teikė džiaugsmą ir prasmę. Įsivyrauja giluminis cinizmas, nusivylimas savimi ir aplinka, apatija. Net elementariausia užduotis (pavyzdžiui, atrašyti trumpą elektroninį laišką) atrodo kaip neįveikiamas kalnas. Kūnas reaguoja stipriais negalavimais: virškinimo sutrikimais, padažnėjusiu širdies plakimu, nusilpusiu imunitetu ir nuolatiniu fiziniu drebuliu.
                     </p>
                 </div>
 
-                <div class="stage-card">
-                    <span class="stage-badge">05 etapas</span>
+                <div class="stage-box">
+                    <span class="stage-box-badge">05 etapas</span>
                     <h4>Įsisenėjęs, chroniškas perdegimas</h4>
                     <p>
                         Jei ankstesni signalai ignoruojami, išsekimas tampa pastovia gyvenimo norma. Žmogus jaučia chronišką bejėgiškumą, gilų nusivylimą savo gyvenimo kryptimi ir egzistencinį prasmės praradimą. Šioje stadijoje perdegimas dažnai persipina su depresinėmis būsenomis, todėl savarankiškų jėgų atsigauti nebeužtenka – reikalingas kryptingas, ilgalaikis psichologinis ir gyvenimo būdo atkūrimo procesas.
@@ -161,24 +565,24 @@
                 Pagrindinis skirtumas slypi ne tik jūsų fiziniame pajėgume, bet ir santykyje su savimi, aplinka bei atliekama veikla:
             </p>
 
-            <div class="comparison-grid">
-                <div class="comparison-col normal">
+            <div class="contrast-table-grid">
+                <div class="contrast-col col-normal">
                     <h4>Paprastas nuovargis</h4>
                     <ul>
-                        <li>Kyla po konkretaus fizinio ar protinio krūvio.</li>
-                        <li>Entuziazmas ir motyvacija grįžta gerai išsimiegojus ar pailsėjus savaitgalį.</li>
-                        <li>Išlaikomas tikėjimas savo gebėjimais ir ateitimi.</li>
-                        <li>Gebama džiaugtis laisvalaikiu, hobiais ir bendravimu.</li>
+                        <li>Kyla po konkretaus fizinio ar protinio krūvio;</li>
+                        <li>Entuziazmas ir motyvacija grįžta gerai išsimiegojus ar pailsėjus savaitgalį;</li>
+                        <li>Išlaikomas tikėjimas savo gebėjimais ir ateitimi;</li>
+                        <li>Gebama nuoširdžiai džiaugtis laisvalaikiu, hobiais ir artimųjų bendravimu;</li>
                         <li>Kūno pojūčiai stabilizuojasi sumažinus darbo tempą.</li>
                     </ul>
                 </div>
-                <div class="comparison-col burnout">
+                <div class="contrast-col col-burnout">
                     <h4>Emocinis perdegimas</h4>
                     <ul>
-                        <li>Nuovargis nepraeina net po atostogų ar 9 valandų miego.</li>
-                        <li>Atsiranda gilus cinizmas, abejingumas ir emocinis atsiribojimas.</li>
-                        <li>Vyrauja beprasmybės jausmas: „kam stengtis, vis tiek nieko nepakeisiu“.</li>
-                        <li>Nuolatinė savikritika, savivertės smukimas ir bejėgiškumas.</li>
+                        <li>Nuovargis nepraeina net po dviejų savaičių atostogų ar 9 valandų miego;</li>
+                        <li>Atsiranda gilus cinizmas, abejingumas ir emocinis atsiribojimas;</li>
+                        <li>Vyrauja beprasmybės jausmas: „kam stengtis, vis tiek nieko nepakeisiu“;</li>
+                        <li>Nuolatinė savikritika, savivertės smukimas ir bejėgiškumas;</li>
                         <li>Lėtiniai kūno skausmai, miego ir virškinimo sutrikimai.</li>
                     </ul>
                 </div>
@@ -189,53 +593,64 @@
                 Atsistatymas po perdegimo nėra greitas procesas, tačiau kiekvienas sąmoningas žingsnis padeda nervų sistemai ištrūkti iš lėtinio pavojaus režimo:
             </p>
 
-            <div class="article-highlight-box">
+            <div class="callout-box">
                 <h4>Praktinės rekomendacijos resursų atkūrimui:</h4>
                 <p>
                     <strong>1. Pripažinkite savo būseną be savigraužos.</strong> Perdegimas nėra charakterio yda, tinginystė ar valios trūkumas. Tai visiškai natūrali, biologinė organizmo reakcija į per ilgai trukusį energijos eikvojimą be būtinojo atstatymo. Nustokite save barti už sumažėjusį produktyvumą.
                 </p>
-                <p style="margin-top: 14px;">
+                <p>
                     <strong>2. Nubrėžkite griežtas profesines ir asmenines ribas.</strong> Sąmoningai išjunkite darbo el. pašto ir susirašinėjimo pranešimus telefone pasibaigus darbo dienai. Mokykitės ramiai, bet tvirtai pasakyti „ne“ papildomoms užduotims, kurios šiuo metu viršija jūsų pajėgumus.
                 </p>
-                <p style="margin-top: 14px;">
-                    <strong>3. Sugrąžinkite kūną į saugumo ramybės būseną.</strong> Nervų sistemai reikalingi aiškūs fiziniai signalai, kad pavojaus nebėra: lėtas pasivaikščiojimas parke ar miške be ausinių, reguliarūs šilti valgiai be skubėjimo ir bent viena valanda be išmaniųjų ekranų prieš miegą.
+                <p>
+                    <strong>3. Sugrąžinkite kūną į saugumo ramybės būseną.</strong> Nervų sistemai reikalingi aiškūs fiziniai signalai, kad pavojaus nebėra: lėtas pasivaikščiojimas parke ar miške be ausinių, reguliarūs šilti valgiai be skubėjimo ir bent viena valanda be išmaniųjų ekranų prieš miegą. Šalia to itin naudingos <a href="nerimo-valdymas.html">įžeminimo ir kvėpavimo technikos</a>, padedančios suvaldyti ūmius streso priepuolius.
                 </p>
-                <p style="margin-top: 14px;">
+                <p>
                     <strong>4. Nelikite vienumoje su savo sunkumu.</strong> Atviras pokalbis su artimu žmogumi, kuriuo pasitikite, padeda sumažinti izoliacijos ir gėdos jausmą. Vien garsus įvardijimas, kaip iš tiesų jaučiatės, atneša didelį emocinį palengvėjimą.
                 </p>
             </div>
 
             <!-- Prominent High-Contrast Call to Action Box for TerapijosGidas.lt -->
-            <div class="article-cta-box">
+            <div class="cta-action-card">
                 <span class="section-tag">Pagalba ir palaikymas</span>
                 <h3>Palaikymas jūsų kelyje į atsigavimą</h3>
                 <p>
-                    Jei jaučiate, kad perdegimas trukdo kasdieniam funkcionavimui, o vien poilsio ar savaitgalių nebeužtenka jėgoms susigrąžinti, profesionalus pokalbis su specialistu padeda saugiai ištirti pervargimo šaknis, išmokti atpažinti kūno siunčiamas ribas ir atkurti gyvenimo džiaugsmą.
+                    Jei jaučiate, kad perdegimas trukdo kasdieniam gyvenimui, o vien poilsio ar savaitgalių nebeužtenka jėgoms susigrąžinti, profesionalus pokalbis su specialistu padeda saugiai ištirti pervargimo šaknis, išmokti atpažinti kūno siunčiamas ribas ir atkurti gyvenimo džiaugsmą.
                 </p>
-                <p style="margin-bottom: 24px;">
+                <p>
                     Svetainėje <a href="https://terapijosgidas.lt" target="_blank" rel="noopener" style="color: #E8A33D !important; text-decoration: underline !important;">TerapijosGidas.lt</a> galite patogiai rasti patikrintus specialistus, dirbančius su streso valdymu, perdegimu bei profesinėmis krizėmis.
                 </p>
-                <div>
-                    <a href="https://terapijosgidas.lt" target="_blank" rel="noopener" class="article-cta-btn">
+                <div style="margin-top: 25px;">
+                    <a href="https://terapijosgidas.lt" target="_blank" rel="noopener" class="cta-action-btn">
                         Raskite patikrintą specialistą platformoje TerapijosGidas.lt ➔
                     </a>
                 </div>
             </div>
         </article>
 
-        <!-- Related articles -->
-        <section class="related-articles">
-            <h3>Kiti naudingi gidai</h3>
-            <div class="related-grid">
-                <div class="related-card">
-                    <span class="article-tag" style="margin-bottom: 12px;">Streso valdymas</span>
-                    <h4><a href="nerimo-valdymas.html">Kaip suvaldyti nerimą: 4 įžeminimo ir kvėpavimo pratimai čia ir dabar</a></h4>
-                    <p>Praktinis vadovas, padedantis nuraminti vegetacinę nervų sistemą.</p>
+        <!-- Related articles section with prominent cards -->
+        <section class="more-guides-section">
+            <h3>Kiti naudingi gidai ir švietimo straipsniai</h3>
+            <div class="guides-cards-grid">
+                <div class="guide-item-card">
+                    <div>
+                        <span class="stage-box-badge">Streso valdymas</span>
+                        <h4><a href="nerimo-valdymas.html">Kaip suvaldyti nerimą: 4 įžeminimo ir kvėpavimo pratimai čia ir dabar</a></h4>
+                        <p>Praktinis vadovas, padedantis nuraminti vegetacinę nervų sistemą ir atgauti kontrolę kūne.</p>
+                    </div>
+                    <div>
+                        <a href="nerimo-valdymas.html" class="guide-read-link">Skaityti gidą &rarr;</a>
+                    </div>
                 </div>
-                <div class="related-card">
-                    <span class="article-tag" style="margin-bottom: 12px;">Pagalbos gidas</span>
-                    <h4><a href="kaip-issirinkti-psichologa.html">Kaip išsirinkti psichologą ar psichoterapeutą: gidas pradedančiajam</a></h4>
-                    <p>Sužinokite, kuo skiriasi specialistai ir kaip rasti patikimą profesionalą.</p>
+
+                <div class="guide-item-card">
+                    <div>
+                        <span class="stage-box-badge">Pagalbos gidas</span>
+                        <h4><a href="kaip-issirinkti-psichologa.html">Kaip išsirinkti psichologą ar psichoterapeutą: gidas pradedančiajam</a></h4>
+                        <p>Sužinokite, kuo skiriasi specialistai, kokie metodai egzistuoja ir kaip rasti patikimą profesionalą.</p>
+                    </div>
+                    <div>
+                        <a href="kaip-issirinkti-psichologa.html" class="guide-read-link">Skaityti gidą &rarr;</a>
+                    </div>
                 </div>
             </div>
         </section>

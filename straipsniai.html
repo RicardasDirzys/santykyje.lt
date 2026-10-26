@@ -30,7 +30,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20261026_4">
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -47,6 +47,119 @@
       }
     }
     </script>
+
+    <style>
+        .hero-subpage {
+            padding-top: 150px;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+            margin: 40px 0 60px 0;
+        }
+
+        .article-card {
+            background-color: #FFFFFF;
+            border: 1px solid rgba(26, 46, 38, 0.12);
+            border-top: 4px solid #E8A33D;
+            border-radius: 8px;
+            padding: 34px 28px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 4px 18px rgba(26, 46, 38, 0.04);
+            transition: all 0.25s ease;
+        }
+
+        .article-card:hover {
+            border-color: #E8A33D;
+            border-top: 4px solid #A3651C;
+            transform: translateY(-4px);
+            box-shadow: 0 14px 34px rgba(26, 46, 38, 0.1);
+        }
+
+        .article-card-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .article-tag {
+            display: inline-block;
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: #A3651C;
+            background-color: #F0EAE1;
+            padding: 4px 10px;
+            border-radius: 4px;
+        }
+
+        .article-read-time {
+            font-size: 0.85rem;
+            color: rgba(26, 46, 38, 0.6);
+        }
+
+        .article-card h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.45rem;
+            line-height: 1.35;
+            margin: 0 0 16px 0;
+        }
+
+        .article-card h3 a {
+            color: #1A2E26 !important;
+            text-decoration: underline !important;
+            text-decoration-color: #E8A33D !important;
+            text-decoration-thickness: 2px !important;
+            text-underline-offset: 4px !important;
+            transition: color 0.2s ease, text-decoration-color 0.2s ease;
+        }
+
+        .article-card:hover h3 a {
+            color: #A3651C !important;
+            text-decoration-color: #A3651C !important;
+        }
+
+        .article-card p {
+            font-size: 1rem;
+            line-height: 1.65;
+            color: rgba(26, 46, 38, 0.82);
+            margin: 0 0 25px 0;
+            flex-grow: 1;
+        }
+
+        .article-card-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95rem;
+            font-weight: 700 !important;
+            color: #1A2E26 !important;
+            background-color: #F0EAE1;
+            padding: 10px 20px;
+            border-radius: 4px;
+            border: 1px solid rgba(232, 163, 61, 0.45);
+            text-decoration: none !important;
+            transition: all 0.22s ease;
+            align-self: flex-start;
+        }
+
+        .article-card:hover .article-card-link,
+        .article-card-link:hover {
+            background-color: #E8A33D;
+            color: #1A2E26 !important;
+            border-color: #E8A33D;
+            transform: translateX(4px);
+            box-shadow: 0 4px 12px rgba(232, 163, 61, 0.3);
+        }
+    </style>
 </head>
 <body>
     <header>

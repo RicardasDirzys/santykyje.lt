@@ -1806,58 +1806,206 @@ footer a:hover {
 }
 
 /* Related Articles Section */
-.related-articles {
-    margin-top: 60px;
-    padding-top: 40px;
-    border-top: 2px solid rgba(26, 46, 38, 0.08);
+.related-articles, .more-guides-section {
+    margin-top: 70px;
+    padding-top: 50px;
+    border-top: 2px solid rgba(26, 46, 38, 0.1);
 }
 
-.related-articles h3 {
-    font-size: 1.55rem;
-    margin-bottom: 24px;
-}
-
-.related-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
-}
-
-.related-card {
-    background: #FFFFFF;
-    border: 1px solid rgba(26, 46, 38, 0.08);
-    border-radius: 6px;
-    padding: 24px;
-    transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.related-card:hover {
-    border-color: #E8A33D;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(26, 46, 38, 0.06);
-}
-
-.related-card h4 {
+.related-articles h3, .more-guides-section h3 {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 1.2rem;
-    line-height: 1.35;
-    margin-bottom: 8px;
-}
-
-.related-card a {
+    font-size: 1.7rem;
     color: #1A2E26;
-    text-decoration: none;
+    margin-bottom: 28px;
 }
 
-.related-card:hover a {
-    color: #E8A33D;
+.related-grid, .guides-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 26px;
 }
 
-.related-card p {
-    font-size: 0.9rem;
-    color: rgba(26, 46, 38, 0.7);
-    margin: 0;
-    line-height: 1.5;
+.related-card, .guide-item-card {
+    background: #FFFFFF;
+    border: 1px solid rgba(26, 46, 38, 0.12);
+    border-top: 4px solid #E8A33D;
+    border-radius: 8px;
+    padding: 30px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 18px rgba(26, 46, 38, 0.04);
+    transition: all 0.25s ease;
+}
+
+.related-card:hover, .guide-item-card:hover {
+    border-color: #E8A33D;
+    border-top: 4px solid #A3651C;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(26, 46, 38, 0.09);
+}
+
+.related-tag, .guide-badge, .article-tag {
+    display: inline-block;
+    align-self: flex-start;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #A3651C;
+    background-color: #F0EAE1;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+}
+
+.related-card h4, .guide-item-card h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.3rem;
+    line-height: 1.38;
+    margin: 0 0 12px 0;
+}
+
+.related-card h4 a, .guide-item-card h4 a {
+    color: #1A2E26 !important;
+    text-decoration: underline !important;
+    text-decoration-color: #E8A33D !important;
+    text-decoration-thickness: 2px !important;
+    text-underline-offset: 4px !important;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.related-card:hover h4 a, .guide-item-card:hover h4 a {
+    color: #A3651C !important;
+    text-decoration-color: #A3651C !important;
+}
+
+.related-card p, .guide-item-card p {
+    font-size: 0.98rem;
+    color: rgba(26, 46, 38, 0.82);
+    margin: 0 0 22px 0;
+    line-height: 1.65;
+    flex-grow: 1;
+}
+
+.related-action-btn, .guide-read-btn, .guide-read-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    font-weight: 700 !important;
+    color: #1A2E26 !important;
+    background-color: #F0EAE1;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(232, 163, 61, 0.45);
+    text-decoration: none !important;
+    transition: all 0.22s ease;
+    align-self: flex-start;
+}
+
+.related-card:hover .related-action-btn,
+.guide-item-card:hover .guide-read-btn,
+.related-action-btn:hover,
+.guide-read-btn:hover {
+    background-color: #E8A33D;
+    color: #1A2E26 !important;
+    border-color: #E8A33D;
+    transform: translateX(4px);
+/* Educational Hub (straipsniai.html) Articles Grid */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    margin: 40px 0 60px 0;
+}
+
+.article-card {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(26, 46, 38, 0.12);
+    border-top: 4px solid #E8A33D;
+    border-radius: 8px;
+    padding: 34px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 18px rgba(26, 46, 38, 0.04);
+    transition: all 0.25s ease;
+}
+
+.article-card:hover {
+    border-color: #E8A33D;
+    border-top: 4px solid #A3651C;
+    transform: translateY(-4px);
+    box-shadow: 0 14px 34px rgba(26, 46, 38, 0.1);
+}
+
+.article-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.article-read-time {
+    font-size: 0.85rem;
+    color: rgba(26, 46, 38, 0.6);
+}
+
+.article-card h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.45rem;
+    line-height: 1.35;
+    margin: 0 0 16px 0;
+}
+
+.article-card h3 a {
+    color: #1A2E26 !important;
+    text-decoration: underline !important;
+    text-decoration-color: #E8A33D !important;
+    text-decoration-thickness: 2px !important;
+    text-underline-offset: 4px !important;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.article-card:hover h3 a {
+    color: #A3651C !important;
+    text-decoration-color: #A3651C !important;
+}
+
+.article-card p {
+    font-size: 1rem;
+    line-height: 1.65;
+    color: rgba(26, 46, 38, 0.82);
+    margin: 0 0 25px 0;
+    flex-grow: 1;
+}
+
+.article-card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    font-weight: 700 !important;
+    color: #1A2E26 !important;
+    background-color: #F0EAE1;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(232, 163, 61, 0.45);
+    text-decoration: none !important;
+    transition: all 0.22s ease;
+    align-self: flex-start;
+}
+
+.article-card:hover .article-card-link,
+.article-card-link:hover {
+    background-color: #E8A33D;
+    color: #1A2E26 !important;
+    border-color: #E8A33D;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(232, 163, 61, 0.3);
 }
 
 @media (max-width: 768px) {

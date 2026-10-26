@@ -30,7 +30,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20261026_4">
 
     <!-- Structured Data (JSON-LD) for Article -->
     <script type="application/ld+json">
@@ -55,6 +55,408 @@
       "dateModified": "2026-10-26"
     }
     </script>
+
+    <!-- Resilient Baltic Modern Article Stylesheet -->
+    <style>
+        /* Article Hero Header with warm Baltic Sand background */
+        .article-hero-section {
+            background-color: #F0EAE1;
+            padding: 160px 24px 60px 24px;
+            border-bottom: 1px solid rgba(26, 46, 38, 0.08);
+            width: 100%;
+            display: block;
+        }
+
+        .article-hero-inner {
+            max-width: 860px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .article-breadcrumbs {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.88rem;
+            color: rgba(26, 46, 38, 0.65);
+            margin-bottom: 22px;
+            flex-wrap: wrap;
+        }
+
+        .article-breadcrumbs a {
+            color: #1A2E26 !important;
+            text-decoration: underline !important;
+            text-decoration-color: rgba(26, 46, 38, 0.3) !important;
+            text-underline-offset: 3px;
+            transition: color 0.2s ease;
+        }
+
+        .article-breadcrumbs a:hover {
+            color: #E8A33D !important;
+            text-decoration-color: #E8A33D !important;
+        }
+
+        .article-breadcrumbs .sep {
+            color: rgba(26, 46, 38, 0.35);
+        }
+
+        .article-breadcrumbs .current {
+            color: rgba(26, 46, 38, 0.75);
+            font-weight: 500;
+        }
+
+        .article-hero-inner .section-tag {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #A3651C;
+            background-color: rgba(232, 163, 61, 0.15);
+            padding: 5px 12px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .article-hero-inner h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2.75rem;
+            line-height: 1.25;
+            color: #1A2E26;
+            margin: 0 0 25px 0;
+            letter-spacing: -0.3px;
+        }
+
+        .article-hero-inner h1 em {
+            font-style: italic;
+            font-weight: 400;
+            color: #A3651C;
+        }
+
+        .article-meta-row {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 0.95rem;
+            color: rgba(26, 46, 38, 0.7);
+            flex-wrap: wrap;
+            padding-top: 10px;
+            border-top: 1px solid rgba(26, 46, 38, 0.1);
+        }
+
+        .article-meta-row span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Main Article Reading Container */
+        .article-main-container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 60px 24px 100px 24px;
+            box-sizing: border-box;
+            background-color: #FAFAFC;
+        }
+
+        .article-body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            font-size: 1.125rem;
+            line-height: 1.85;
+            color: #1A2E26;
+        }
+
+        .article-body p {
+            margin-bottom: 24px;
+        }
+
+        .article-lead {
+            font-size: 1.3rem;
+            line-height: 1.75;
+            color: #1A2E26;
+            font-weight: 400;
+            margin-bottom: 35px;
+            border-bottom: 1px solid rgba(26, 46, 38, 0.08);
+            padding-bottom: 25px;
+        }
+
+        .article-body h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.95rem;
+            line-height: 1.35;
+            color: #1A2E26;
+            margin-top: 55px;
+            margin-bottom: 22px;
+            letter-spacing: -0.2px;
+            border-bottom: 2px solid rgba(232, 163, 61, 0.3);
+            padding-bottom: 10px;
+        }
+
+        .article-body h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.45rem;
+            color: #1A2E26;
+            margin-top: 35px;
+            margin-bottom: 16px;
+        }
+
+        /* In-text Links with high contrast & amber underline */
+        .article-body a {
+            color: #A3651C !important;
+            font-weight: 600 !important;
+            text-decoration: underline !important;
+            text-decoration-color: #E8A33D !important;
+            text-decoration-thickness: 2px !important;
+            text-underline-offset: 4px !important;
+            transition: all 0.2s ease;
+        }
+
+        .article-body a:hover {
+            color: #1A2E26 !important;
+            background-color: rgba(232, 163, 61, 0.18) !important;
+            border-radius: 3px !important;
+        }
+
+        /* Role & Technique Cards */
+        .stage-box-list {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            margin: 35px 0;
+        }
+
+        .stage-box {
+            background-color: #FFFFFF;
+            border: 1px solid rgba(26, 46, 38, 0.1);
+            border-left: 5px solid #E8A33D;
+            border-radius: 6px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(26, 46, 38, 0.03);
+        }
+
+        .stage-box-badge {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: #A3651C;
+            background-color: #F0EAE1;
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+        }
+
+        .stage-box h4 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.35rem;
+            color: #1A2E26;
+            margin-bottom: 12px;
+        }
+
+        .stage-box p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: rgba(26, 46, 38, 0.88);
+            margin: 0;
+        }
+
+        /* Highlight Callout Box */
+        .callout-box {
+            background-color: #F0EAE1;
+            border-left: 4px solid #1A2E26;
+            border-radius: 4px;
+            padding: 32px;
+            margin: 40px 0;
+        }
+
+        .callout-box h4 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.35rem;
+            color: #1A2E26;
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        .callout-box p {
+            margin-bottom: 14px;
+            font-size: 1.05rem;
+            line-height: 1.75;
+        }
+
+        .callout-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Prominent CTA Box to TerapijosGidas */
+        .cta-action-card {
+            background-color: #1A2E26;
+            color: #FAFAFC;
+            border-radius: 8px;
+            padding: 45px 40px;
+            margin: 60px 0 40px 0;
+            box-shadow: 0 16px 36px rgba(26, 46, 38, 0.15);
+            text-align: left;
+        }
+
+        .cta-action-card .section-tag {
+            color: #E8A33D;
+            margin-bottom: 12px;
+        }
+
+        .cta-action-card h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.85rem;
+            color: #FAFAFC;
+            margin: 0 0 16px 0;
+            line-height: 1.3;
+        }
+
+        .cta-action-card p {
+            font-size: 1.08rem;
+            line-height: 1.75;
+            color: rgba(250, 250, 252, 0.88);
+            margin-bottom: 25px;
+        }
+
+        .cta-action-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background-color: #E8A33D;
+            color: #1A2E26 !important;
+            font-weight: 700 !important;
+            font-size: 1.05rem;
+            padding: 16px 32px;
+            border-radius: 4px;
+            text-decoration: none !important;
+            transition: all 0.25s ease;
+            box-shadow: 0 6px 18px rgba(232, 163, 61, 0.4);
+        }
+
+        .cta-action-btn:hover {
+            background-color: #FAFAFC;
+            color: #1A2E26 !important;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Related Articles Prominent Cards */
+        .more-guides-section {
+            margin-top: 70px;
+            padding-top: 50px;
+            border-top: 2px solid rgba(26, 46, 38, 0.1);
+        }
+
+        .more-guides-section h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.7rem;
+            margin-bottom: 28px;
+            color: #1A2E26;
+        }
+
+        .guides-cards-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .guide-item-card {
+            background-color: #FFFFFF;
+            border: 1px solid rgba(26, 46, 38, 0.12);
+            border-top: 4px solid #E8A33D;
+            border-radius: 8px;
+            padding: 30px 26px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 18px rgba(26, 46, 38, 0.04);
+        }
+
+        .guide-item-card:hover {
+            border-color: #E8A33D;
+            border-top: 4px solid #A3651C;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(26, 46, 38, 0.09);
+        }
+
+        .guide-item-card h4 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.3rem;
+            line-height: 1.38;
+            margin: 12px 0 12px 0;
+        }
+
+        .guide-item-card h4 a {
+            color: #1A2E26 !important;
+            text-decoration: underline !important;
+            text-decoration-color: #E8A33D !important;
+            text-decoration-thickness: 2px !important;
+            text-underline-offset: 4px !important;
+            transition: all 0.2s ease;
+        }
+
+        .guide-item-card:hover h4 a {
+            color: #A3651C !important;
+            text-decoration-color: #A3651C !important;
+        }
+
+        .guide-item-card p {
+            font-size: 0.98rem;
+            line-height: 1.65;
+            color: rgba(26, 46, 38, 0.82);
+            margin: 0 0 20px 0;
+        }
+
+        .guide-read-link {
+            font-size: 0.95rem;
+            font-weight: 700 !important;
+            color: #1A2E26 !important;
+            background-color: #F0EAE1;
+            padding: 10px 20px;
+            border-radius: 4px;
+            border: 1px solid rgba(232, 163, 61, 0.45);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none !important;
+            margin-top: 10px;
+            transition: all 0.22s ease;
+            align-self: flex-start;
+        }
+
+        .guide-item-card:hover .guide-read-link,
+        .guide-read-link:hover {
+            background-color: #E8A33D;
+            color: #1A2E26 !important;
+            border-color: #E8A33D;
+            transform: translateX(4px);
+            box-shadow: 0 4px 12px rgba(232, 163, 61, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .article-hero-section {
+                padding: 130px 20px 45px 20px;
+            }
+            .article-hero-inner h1 {
+                font-size: 2.1rem;
+            }
+            .article-main-container {
+                padding: 40px 18px 70px 18px;
+            }
+            .guides-cards-grid {
+                grid-template-columns: 1fr;
+            }
+            .cta-action-card {
+                padding: 30px 20px;
+            }
+            .cta-action-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -75,11 +477,10 @@
         </div>
     </header>
 
-    <!-- Header Section with Baltic Sand Background -->
-    <section class="article-page-header">
-        <div class="article-header-container">
-            <!-- Breadcrumbs -->
-            <nav class="breadcrumbs" aria-label="Navigacija">
+    <!-- Header Section with Baltic Sand Background & Breathing Room -->
+    <section class="article-hero-section">
+        <div class="article-hero-inner">
+            <nav class="article-breadcrumbs" aria-label="Navigacija">
                 <a href="index.html">Pradžia</a>
                 <span class="sep">/</span>
                 <a href="straipsniai.html">Švietimas ir straipsniai</a>
@@ -90,7 +491,7 @@
             <span class="section-tag">Visuomeninis švietimas • Santykių dinamika</span>
             <h1>Santykių krizė ar augimo taškas? Kaip kalbėtis, kai atrodo, kad <em>nebegirdite</em> vienas kito</h1>
             
-            <div class="article-meta-bar">
+            <div class="article-meta-row">
                 <span>⏱️ ~6 min. skaitymo</span>
                 <span>🌿 Empatiško bendravimo gidas</span>
                 <span>📍 Autorius: VšĮ „Santykyje“ švietimo iniciatyva</span>
@@ -98,15 +499,15 @@
         </div>
     </section>
 
-    <!-- Article Content -->
-    <main class="article-body-wrapper">
-        <article class="article-content">
+    <!-- Main Article Body -->
+    <main class="article-main-container">
+        <article class="article-body">
             <p class="article-lead">
                 Kiekvieni ilgalaikiai poros santykiai anksčiau ar vėliau priartėja prie etapo, kai pradinė aistra, abipusis idealizavimas ir lengvumo jausmas atslūgsta. Į jų vietą pamažu ateina buities rutina, profesinis nuovargis, vaikų auginimo iššūkiai bei neišvengiami požiūrių skirtumai. Daugelis porų šį virsmą išgyvena kaip skaudžią asmeninę ar santykių krizę: ramus pokalbis vis dažniau virsta priekaištais, net smulkiausias nesusipratimas sukelia emocinę audrą, o nematomas atstumas tarp dviejų kadaise artimų žmonių ima atrodyti nebeįveikiamas.
             </p>
 
             <p>
-                Vis dėlto santykių psichologija rodo, kad krizė nebūtinai reiškia santykių pabaigą. Priešingai – tai natūralus ir būtinas raidos taškas, reiškiantis, kad senieji, nesąmoningi bendravimo modeliai išsisėmė, o pora yra kviečiama pereiti prie brandesnio, gilesnio ir autentiškesnio ryšio. Tam, kad šis virsmas netaptų griūtimi, būtina suprasti, kaip veikia pasikartojantys konfliktų mechanizmai.
+                Vis dėlto santykių psichologija rodo, kad krizė nebūtinai reiškia santykių pabaigą. Priešingai – tai natūralus ir būtinas raidos taškas, reiškiantis, kad senieji, nesąmoningi bendravimo modeliai išsisėmė, o pora yra kviečiama pereiti prie brandesnio, gilesnio ir autentiškesnio ryšio. Tam, kad šis virsmas netaptų griūtimi, būtina suprasti, kaip veikia pasikartojantys konfliktų mechanizmai. Taip pat verta atkreipti dėmesį, ar vieno iš partnerių emocinė būsena nėra paveikta <a href="emocinis-perdegimas.html">emocinio perdegimo darbe ar asmeniniame gyvenime</a>, nes perdegimas dažnai atima kantrybę bendraujant poroje.
             </p>
 
             <h2>Destruktyvus konfliktų ratas: persekiotojo ir atsitraukiančiojo dinamika</h2>
@@ -114,17 +515,17 @@
                 Analizuojant pasikartojančius porų ginčus, paaiškėja, kad jų turinys (nesuplauti indai, vėlavimas ar finansai) yra tik paviršius. Tikroji problema slypi santykio dinamikoje – vadinamajame „persekiotojo ir atsitraukiančiojo“ (angl. <em>pursuer-distancer</em>) šokyje:
             </p>
 
-            <div class="stage-card-list">
-                <div class="stage-card">
-                    <span class="stage-badge">Pirmasis vaidmuo</span>
+            <div class="stage-box-list">
+                <div class="stage-box">
+                    <span class="stage-box-badge">Pirmasis vaidmuo</span>
                     <h4>Persekiotojas (reakcija į emocinio ryšio praradimo nerimą)</h4>
                     <p>
                         Vienas iš partnerių pajunta kylantį atstumą ir pasąmoningą baimę būti atstumtam ar nereikalingam. Norėdamas atkurti ryšį, jis pradeda reikalauti dėmesio, kelti toną, kritikuoti, reikšti pretenzijas („Tu niekada neturi man laiko!“, „Tau nerūpi mūsų šeima!“). Po pykčio kauke slepiasi gilus nesaugumo jausmas ir vienišumas.
                     </p>
                 </div>
 
-                <div class="stage-card">
-                    <span class="stage-badge">Antrasis vaidmuo</span>
+                <div class="stage-box">
+                    <span class="stage-box-badge">Antrasis vaidmuo</span>
                     <h4>Atsitraukiantysis (gynyba nuo emocinio užtvindymo)</h4>
                     <p>
                         Kitas partneris priekaištus priima kaip tiesioginę grėsmę ar priekaištą savo netinkamumui. Norėdamas apsaugoti santykį nuo dar didesnio sprogimo arba pats išvengti emocinio diskomforto, jis nutyla, užsisklendžia savyje, išeina į kitą kambarį, pasineria į telefoną, kompiuterį ar viršvalandžius darbe.
@@ -141,21 +542,21 @@
                 Norint nutraukti šį automatinį destruktyvų ciklą, reikalingas sąmoningas abiejų partnerių elgesio keitimas. Štai keturios praktinės taisyklės, padedančios sugrąžinti saugumą į pokalbį:
             </p>
 
-            <div class="article-highlight-box">
+            <div class="callout-box">
                 <h4>Praktiniai bendravimo žingsniai porai:</h4>
                 <p>
                     <strong>1. Keiskite kaltinančius „Tu“ priekaištus į asmenines „Aš“ žinutes.</strong><br>
                     Frazė <em>„Tu vėl visą vakarą sėdi telefone ir visiškai manęs neklausai“</em> akimirksniu sukelia norą gintis arba pulti atgal. Vietoj to įvardinkite savo jausmą ir konkretų poreikį: <em>„Kai tu naršai telefone mūsų pokalbio metu, aš pasijuntu vieniša ir nesvarbi. Man labai reikėtų 15 minučių pabūti kartu be ekranų, kad galėtume pasikalbėti apie dieną.“</em>
                 </p>
-                <p style="margin-top: 16px;">
+                <p>
                     <strong>2. Laiku atpažinkite „emocinį potvynį“ ir padarykite pauzę.</strong><br>
-                    Kai pulso dažnis ginčo metu viršija 100 dūžių per minutę, smegenų kaktinė žievė laikinai prislopsta – žmogus biologiškai nebegali girdėti argumentų ir pradeda tik gintis arba atakuoti. Išmokite susitarti dėl pauzės: <em>„Aš matau, kad mes abu esame per daug susijaudinę. Paimkime 25 minučių pertrauką nusiraminti ir po to pratęsime pokalbį.“</em> Svarbu nurodyti konkretų laiką, kad atsitraukimas neatrodytų kaip bėgimas.
+                    Kai pulso dažnis ginčo metu viršija 100 dūžių per minutę, smegenų kaktinė žievė laikinai prislopsta – žmogus biologiškai nebegali girdėti argumentų ir pradeda tik gintis arba atakuoti. Išmokite susitarti dėl pauzės: <em>„Aš matau, kad mes abu esame per daug susijaudinę. Paimkime 25 minučių pertrauką nusiraminti ir po to pratęsime pokalbį.“</em> Svarbu nurodyti konkretų laiką, kad atsitraukimas neatrodytų kaip bėgimas. Nusiraminti padeda ir <a href="nerimo-valdymas.html">kūno įžeminimo bei kvėpavimo pratimai</a>.
                 </p>
-                <p style="margin-top: 16px;">
+                <p>
                     <strong>3. Klausykitės, kad suprastumėte, o ne tam, kad atsakytumėte.</strong><br>
                     Užuot partneriui kalbant galvoje ruošę kontrargumentus ar gynybos taktiką, pabandykite tiesiog perfrazuoti tai, ką išgirdote: <em>„Ar teisingai tave suprantu: tu jautiesi labai pavargęs po darbo ir tau reikia pusvalandžio tylos, o ne mano klausimų?“</em> Šis paprastas veiksmas parodo, kad partneris yra išgirstas.
                 </p>
-                <p style="margin-top: 16px;">
+                <p>
                     <strong>4. Sąmoningai pastebėkite ir įvardinkite dėkingumą.</strong><br>
                     Santykių krizių metu protas linksta fiksuoti tik neigiamus dalykus. Sąmoningai pasakykite ačiū už paruoštą kavą, išneštas šiukšles ar apkabinimą. Maži teigiami pastebėjimai atkuria bendrumo jausmą.
                 </p>
@@ -166,44 +567,59 @@
                 Nors knygos ir straipsniai suteikia vertingų žinių, būna situacijų, kai pora įstringa tokiuose giliuose nuoskaudų sluoksniuose, kad bet koks bandymas pasikalbėti savarankiškai baigiasi dar viena skaudžia konfrontacija. Tokiais atvejais profesionalus specialistas – porų psichologas ar terapeutas – sukuria saugią, neutralią erdvę, kurioje galima:
             </p>
 
-            <ul>
-                <li>Išsiaiškinti pasikartojančius konfliktų modelius ir išmokti juos sustabdyti realiu laiku;</li>
-                <li>Išsakyti giliausius skaudulius be baimės būti užsipultam ar išjuoktam;</li>
-                <li>Iš naujo susitarti dėl bendrų vertybių, atsakomybių ir intymumo ribų;</li>
-                <li>Atsakingai įvertinti santykių ateitį ir rasti abipusiai pagarbius sprendimus.</li>
+            <ul style="padding-left: 24px; margin-bottom: 30px;">
+                <li style="margin-bottom: 10px;">Išsiaiškinti pasikartojančius konfliktų modelius ir išmokti juos sustabdyti realiu laiku;</li>
+                <li style="margin-bottom: 10px;">Išsakyti giliausius skaudulius be baimės būti užsipultam ar išjuoktam;</li>
+                <li style="margin-bottom: 10px;">Iš naujo susitarti dėl bendrų vertybių, atsakomybių ir intymumo ribų;</li>
+                <li style="margin-bottom: 10px;">Atsakingai įvertinti santykių ateitį ir rasti abipusiai pagarbius sprendimus.</li>
             </ul>
 
+            <p>
+                Jei svarstote apie specialisto pagalbą, naudinga susipažinti su <a href="kaip-issirinkti-psichologa.html">gidu apie psichologo ar psichoterapeuto pasirinkimą</a>, kur aptariamos specialistų kompetencijos, profesinė etika ir terapinis ryšys.
+            </p>
+
             <!-- Prominent High-Contrast Call to Action Box for TerapijosGidas.lt -->
-            <div class="article-cta-box">
+            <div class="cta-action-card">
                 <span class="section-tag">Porų palaikymas</span>
                 <h3>Palaikymas porų santykiams</h3>
                 <p>
                     Krizė santykiuose gali tapti gilesnio artumo, pasitikėjimo ir abipusės pagarbos pradžia. Saugus, profesionalus dialogas padeda išmokti kalbėtis taip, kad abu partneriai jaustųsi išgirsti ir priimti.
                 </p>
-                <p style="margin-bottom: 24px;">
+                <p style="margin-bottom: 25px;">
                     Platformoje <a href="https://terapijosgidas.lt" target="_blank" rel="noopener" style="color: #E8A33D !important; text-decoration: underline !important;">TerapijosGidas.lt</a> galite greitai ir patogiai rasti patikrintus specialistus, dirbančius su porų santykių krizėmis, bendravimo sunkumais ir šeimos dinamika.
                 </p>
                 <div>
-                    <a href="https://terapijosgidas.lt" target="_blank" rel="noopener" class="article-cta-btn">
+                    <a href="https://terapijosgidas.lt" target="_blank" rel="noopener" class="cta-action-btn">
                         Raskite patikrintus porų specialistus platformoje TerapijosGidas.lt ➔
                     </a>
                 </div>
             </div>
         </article>
 
-        <!-- Related articles -->
-        <section class="related-articles">
-            <h3>Kiti naudingi gidai</h3>
-            <div class="related-grid">
-                <div class="related-card">
-                    <span class="article-tag" style="margin-bottom: 12px;">Emocinė gerovė</span>
-                    <h4><a href="emocinis-perdegimas.html">Emocinis perdegimas: kaip atpažinti 5 etapus ir kada ieškoti palaikymo?</a></h4>
-                    <p>Sužinokite, kaip apsaugoti savo ribas ir atkurti išsekusius kognityvinius resursus.</p>
+        <!-- Related articles section with prominent cards -->
+        <section class="more-guides-section">
+            <h3>Kiti naudingi gidai ir švietimo straipsniai</h3>
+            <div class="guides-cards-grid">
+                <div class="guide-item-card">
+                    <div>
+                        <span class="stage-box-badge">Emocinė gerovė</span>
+                        <h4><a href="emocinis-perdegimas.html">Emocinis perdegimas: kaip atpažinti 5 etapus ir kada ieškoti palaikymo?</a></h4>
+                        <p>Sužinokite, kaip apsaugoti savo ribas, atpažinti išsekimą ir atkurti kognityvinius resursus.</p>
+                    </div>
+                    <div>
+                        <a href="emocinis-perdegimas.html" class="guide-read-link">Skaityti gidą &rarr;</a>
+                    </div>
                 </div>
-                <div class="related-card">
-                    <span class="article-tag" style="margin-bottom: 12px;">Pagalbos gidas</span>
-                    <h4><a href="kaip-issirinkti-psichologa.html">Kaip išsirinkti psichologą ar psichoterapeutą: gidas pradedančiajam</a></h4>
-                    <p>Praktinis vadovas, padedantis suprasti skirtingas kryptis ir rasti tinkamą specialistą.</p>
+
+                <div class="guide-item-card">
+                    <div>
+                        <span class="stage-box-badge">Pagalbos gidas</span>
+                        <h4><a href="kaip-issirinkti-psichologa.html">Kaip išsirinkti psichologą ar psichoterapeutą: gidas pradedančiajam</a></h4>
+                        <p>Praktinis vadovas, padedantis suprasti skirtingas kryptis, specialistų kvalifikacijas ir rasti tinkamą pagalbą.</p>
+                    </div>
+                    <div>
+                        <a href="kaip-issirinkti-psichologa.html" class="guide-read-link">Skaityti gidą &rarr;</a>
+                    </div>
                 </div>
             </div>
         </section>
